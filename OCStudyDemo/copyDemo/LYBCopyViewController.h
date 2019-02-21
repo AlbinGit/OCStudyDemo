@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LYBCopyViewController.h
 //  OCStudyDemo
 //
 //  Created by Albin on 2018/2/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface LYBCopyViewController : UIViewController
 
 @end
-

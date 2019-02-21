@@ -1,24 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="71H-SV-DMW"/>
+                        <viewControllerLayoutGuide type="bottom" id="98o-ND-UIk"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="154"/>
+        </scene>
+        <!--Runtime View Controller-->
+        <scene sceneID="DhD-gd-OPc">
+            <objects>
+                <viewController storyboardIdentifier="LYBRuntimeViewController" id="zYy-dF-zAw" customClass="LYBRuntimeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XaA-3U-ssN"/>
+                        <viewControllerLayoutGuide type="bottom" id="iEf-R3-r9W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nm6-KW-cEh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssM-pY-BlV">
+                                <rect key="frame" x="56" y="268.5" width="263" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX1-Wc-lw7">
+                                <rect key="frame" x="137.5" y="318.5" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="FQH-hy-4EO"/>
+                                    <constraint firstAttribute="width" constant="100" id="Yvd-eU-Arx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Change Text"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="zYy-dF-zAw" eventType="touchUpInside" id="hc1-KY-xI9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ssM-pY-BlV" firstAttribute="centerY" secondItem="nm6-KW-cEh" secondAttribute="centerY" constant="-50" id="7Ml-6q-oxT"/>
+                            <constraint firstItem="UX1-Wc-lw7" firstAttribute="centerX" secondItem="nm6-KW-cEh" secondAttribute="centerX" id="8ds-2f-Pj8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ssM-pY-BlV" secondAttribute="trailing" constant="40" id="Vtj-l6-3OD"/>
+                            <constraint firstItem="ssM-pY-BlV" firstAttribute="leading" secondItem="nm6-KW-cEh" secondAttribute="leadingMargin" constant="40" id="XKH-kA-E3N"/>
+                            <constraint firstItem="ssM-pY-BlV" firstAttribute="centerX" secondItem="nm6-KW-cEh" secondAttribute="centerX" id="c9q-Yp-a8q"/>
+                            <constraint firstItem="UX1-Wc-lw7" firstAttribute="top" secondItem="ssM-pY-BlV" secondAttribute="bottom" constant="20" id="cqe-su-iIB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="UX1-Wc-lw7" id="ZPv-RC-3fo"/>
+                        <outlet property="textField" destination="ssM-pY-BlV" id="zoh-IO-eHa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25n-Uk-h95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="154"/>
         </scene>
     </scenes>
 </document>

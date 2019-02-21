@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11C46562126C56600D89D8B /* LYBLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C46552126C56600D89D8B /* LYBLockViewController.m */; };
+		B12516E2206C787900D3A758 /* LYBBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12516E1206C787900D3A758 /* LYBBlockViewController.m */; };
+		B12516E5206C78AF00D3A758 /* LYBBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12516E4206C78AF00D3A758 /* LYBBlockView.m */; };
+		B12516E8206C816F00D3A758 /* LYBBlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B12516E7206C816F00D3A758 /* LYBBlockModel.m */; };
+		B12D2ACD207462F9001999E3 /* LYBRadarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2ACC207462F9001999E3 /* LYBRadarDemoViewController.m */; };
+		B12D2AD02074649E001999E3 /* LYBRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2ACF2074649E001999E3 /* LYBRadarView.m */; };
+		B12D2AD320746524001999E3 /* LYBSectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2AD220746524001999E3 /* LYBSectorView.m */; };
+		B12D2AD8207466AA001999E3 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2AD7207466AA001999E3 /* UIColor+Extension.m */; };
+		B14FF2D7207C5888006CD5ED /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = B14FF2D6207C5888006CD5ED /* UIView+Animation.m */; };
+		B150B3732133F447008C16CA /* LYBMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B150B3722133F447008C16CA /* LYBMediaViewController.m */; };
+		B155583E2107122A00A45E41 /* NSObject+LYBKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = B155583D2107122A00A45E41 /* NSObject+LYBKVO.m */; };
+		B160092820D91DCC00FE75C2 /* UIButton+LYBExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = B160092720D91DCC00FE75C2 /* UIButton+LYBExtern.m */; };
+		B172175D207AFB100024B212 /* LYBTimerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B172175C207AFB100024B212 /* LYBTimerClass.m */; };
+		B1721760207AFD580024B212 /* LYBTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B172175F207AFD580024B212 /* LYBTimerViewController.m */; };
+		B1721763207AFD970024B212 /* NSTimer+LYBBlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B1721762207AFD970024B212 /* NSTimer+LYBBlockSupport.m */; };
+		B1A025E5210AC0820053C137 /* LYBSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A025E4210AC0820053C137 /* LYBSortViewController.m */; };
+		B1C6460E21002FEC00F680BD /* LYBRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6460D21002FEC00F680BD /* LYBRuntimeViewController.m */; };
+		B1C64611210030B500F680BD /* LYBAutoDictionnary.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C64610210030B500F680BD /* LYBAutoDictionnary.m */; };
+		B1C64614210065D600F680BD /* LYBTestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C64613210065D600F680BD /* LYBTestMethod.m */; };
+		B1C6461721008D0B00F680BD /* LYBInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6461621008D0B00F680BD /* LYBInvocation.m */; };
+		B1D2DB592044FAE000DEE835 /* LYBCircelCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2DB582044FAE000DEE835 /* LYBCircelCollectionViewController.m */; };
+		B1D2DB5E2044FBCE00DEE835 /* MagicCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2DB5A2044FBCE00DEE835 /* MagicCircleLayout.m */; };
+		B1D2DB5F2044FBCE00DEE835 /* DSCircularLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2DB5B2044FBCE00DEE835 /* DSCircularLayout.m */; };
+		B1D2DB622044FBFF00DEE835 /* CNCilrcleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2DB602044FBFF00DEE835 /* CNCilrcleCollectionViewCell.m */; };
+		B1D2DB652044FCEE00DEE835 /* LYBCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2DB642044FCEE00DEE835 /* LYBCellModel.m */; };
+		B1D5780C20808F0400FAEE96 /* LYBThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5780B20808F0400FAEE96 /* LYBThreadViewController.m */; };
 		B1D7E3C320439E4C00AE2C08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3C220439E4C00AE2C08 /* AppDelegate.m */; };
 		B1D7E3C620439E4C00AE2C08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3C520439E4C00AE2C08 /* ViewController.m */; };
 		B1D7E3C920439E4C00AE2C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D7E3C720439E4C00AE2C08 /* Main.storyboard */; };
@@ -15,6 +41,12 @@
 		B1D7E3D120439E4C00AE2C08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3D020439E4C00AE2C08 /* main.m */; };
 		B1D7E3DB20439E4D00AE2C08 /* OCStudyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3DA20439E4D00AE2C08 /* OCStudyDemoTests.m */; };
 		B1D7E3E620439E4D00AE2C08 /* OCStudyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3E520439E4D00AE2C08 /* OCStudyDemoUITests.m */; };
+		B1D7E3F92043A56D00AE2C08 /* LYBCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3F82043A56D00AE2C08 /* LYBCopyViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B1D7E3FC2043A5C700AE2C08 /* LYBShallowCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3FB2043A5C700AE2C08 /* LYBShallowCopyModel.m */; };
+		B1D7E3FF2043A5D700AE2C08 /* LYBDeepCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7E3FE2043A5D700AE2C08 /* LYBDeepCopyModel.m */; };
+		B1F03025204D1BD40085493A /* LYBProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F03024204D1BD40085493A /* LYBProtocolViewController.m */; };
+		B1F03029204D1DA50085493A /* LYBPerson1.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F03028204D1DA50085493A /* LYBPerson1.m */; };
+		B1F0302C204D1DB90085493A /* LYBPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F0302B204D1DB90085493A /* LYBPerson2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +67,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B11C46542126C56600D89D8B /* LYBLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBLockViewController.h; sourceTree = "<group>"; };
+		B11C46552126C56600D89D8B /* LYBLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBLockViewController.m; sourceTree = "<group>"; };
+		B12516E0206C787900D3A758 /* LYBBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBBlockViewController.h; sourceTree = "<group>"; };
+		B12516E1206C787900D3A758 /* LYBBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBBlockViewController.m; sourceTree = "<group>"; };
+		B12516E3206C78AF00D3A758 /* LYBBlockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBBlockView.h; sourceTree = "<group>"; };
+		B12516E4206C78AF00D3A758 /* LYBBlockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBBlockView.m; sourceTree = "<group>"; };
+		B12516E6206C816F00D3A758 /* LYBBlockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBBlockModel.h; sourceTree = "<group>"; };
+		B12516E7206C816F00D3A758 /* LYBBlockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBBlockModel.m; sourceTree = "<group>"; };
+		B12D2ACB207462F9001999E3 /* LYBRadarDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBRadarDemoViewController.h; sourceTree = "<group>"; };
+		B12D2ACC207462F9001999E3 /* LYBRadarDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBRadarDemoViewController.m; sourceTree = "<group>"; };
+		B12D2ACE2074649E001999E3 /* LYBRadarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBRadarView.h; sourceTree = "<group>"; };
+		B12D2ACF2074649E001999E3 /* LYBRadarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBRadarView.m; sourceTree = "<group>"; };
+		B12D2AD120746524001999E3 /* LYBSectorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBSectorView.h; sourceTree = "<group>"; };
+		B12D2AD220746524001999E3 /* LYBSectorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBSectorView.m; sourceTree = "<group>"; };
+		B12D2AD6207466AA001999E3 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		B12D2AD7207466AA001999E3 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		B12D2AD920746B59001999E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B14FF2D5207C5888006CD5ED /* UIView+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		B14FF2D6207C5888006CD5ED /* UIView+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		B150B3712133F447008C16CA /* LYBMediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBMediaViewController.h; sourceTree = "<group>"; };
+		B150B3722133F447008C16CA /* LYBMediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBMediaViewController.m; sourceTree = "<group>"; };
+		B155583C2107122A00A45E41 /* NSObject+LYBKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LYBKVO.h"; sourceTree = "<group>"; };
+		B155583D2107122A00A45E41 /* NSObject+LYBKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LYBKVO.m"; sourceTree = "<group>"; };
+		B160092620D91DCC00FE75C2 /* UIButton+LYBExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYBExtern.h"; sourceTree = "<group>"; };
+		B160092720D91DCC00FE75C2 /* UIButton+LYBExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYBExtern.m"; sourceTree = "<group>"; };
+		B172175B207AFB100024B212 /* LYBTimerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBTimerClass.h; sourceTree = "<group>"; };
+		B172175C207AFB100024B212 /* LYBTimerClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBTimerClass.m; sourceTree = "<group>"; };
+		B172175E207AFD580024B212 /* LYBTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBTimerViewController.h; sourceTree = "<group>"; };
+		B172175F207AFD580024B212 /* LYBTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBTimerViewController.m; sourceTree = "<group>"; };
+		B1721761207AFD970024B212 /* NSTimer+LYBBlockSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+LYBBlockSupport.h"; sourceTree = "<group>"; };
+		B1721762207AFD970024B212 /* NSTimer+LYBBlockSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+LYBBlockSupport.m"; sourceTree = "<group>"; };
+		B1A025E3210AC0820053C137 /* LYBSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBSortViewController.h; sourceTree = "<group>"; };
+		B1A025E4210AC0820053C137 /* LYBSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBSortViewController.m; sourceTree = "<group>"; };
+		B1C6460C21002FEC00F680BD /* LYBRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBRuntimeViewController.h; sourceTree = "<group>"; };
+		B1C6460D21002FEC00F680BD /* LYBRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBRuntimeViewController.m; sourceTree = "<group>"; };
+		B1C6460F210030B500F680BD /* LYBAutoDictionnary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBAutoDictionnary.h; sourceTree = "<group>"; };
+		B1C64610210030B500F680BD /* LYBAutoDictionnary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBAutoDictionnary.m; sourceTree = "<group>"; };
+		B1C64612210065D600F680BD /* LYBTestMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBTestMethod.h; sourceTree = "<group>"; };
+		B1C64613210065D600F680BD /* LYBTestMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBTestMethod.m; sourceTree = "<group>"; };
+		B1C6461521008D0B00F680BD /* LYBInvocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBInvocation.h; sourceTree = "<group>"; };
+		B1C6461621008D0B00F680BD /* LYBInvocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBInvocation.m; sourceTree = "<group>"; };
+		B1D2DB572044FAE000DEE835 /* LYBCircelCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCircelCollectionViewController.h; sourceTree = "<group>"; };
+		B1D2DB582044FAE000DEE835 /* LYBCircelCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBCircelCollectionViewController.m; sourceTree = "<group>"; };
+		B1D2DB5A2044FBCE00DEE835 /* MagicCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicCircleLayout.m; sourceTree = "<group>"; };
+		B1D2DB5B2044FBCE00DEE835 /* DSCircularLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCircularLayout.m; sourceTree = "<group>"; };
+		B1D2DB5C2044FBCE00DEE835 /* MagicCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicCircleLayout.h; sourceTree = "<group>"; };
+		B1D2DB5D2044FBCE00DEE835 /* DSCircularLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCircularLayout.h; sourceTree = "<group>"; };
+		B1D2DB602044FBFF00DEE835 /* CNCilrcleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCilrcleCollectionViewCell.m; sourceTree = "<group>"; };
+		B1D2DB612044FBFF00DEE835 /* CNCilrcleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCilrcleCollectionViewCell.h; sourceTree = "<group>"; };
+		B1D2DB632044FCEE00DEE835 /* LYBCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCellModel.h; sourceTree = "<group>"; };
+		B1D2DB642044FCEE00DEE835 /* LYBCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBCellModel.m; sourceTree = "<group>"; };
+		B1D5780A20808F0400FAEE96 /* LYBThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBThreadViewController.h; sourceTree = "<group>"; };
+		B1D5780B20808F0400FAEE96 /* LYBThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBThreadViewController.m; sourceTree = "<group>"; };
 		B1D7E3BE20439E4C00AE2C08 /* OCStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D7E3C120439E4C00AE2C08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1D7E3C220439E4C00AE2C08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +136,19 @@
 		B1D7E3E120439E4D00AE2C08 /* OCStudyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCStudyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D7E3E520439E4D00AE2C08 /* OCStudyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStudyDemoUITests.m; sourceTree = "<group>"; };
 		B1D7E3E720439E4D00AE2C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D7E3F72043A56D00AE2C08 /* LYBCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBCopyViewController.h; sourceTree = "<group>"; };
+		B1D7E3F82043A56D00AE2C08 /* LYBCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBCopyViewController.m; sourceTree = "<group>"; };
+		B1D7E3FA2043A5C700AE2C08 /* LYBShallowCopyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBShallowCopyModel.h; sourceTree = "<group>"; };
+		B1D7E3FB2043A5C700AE2C08 /* LYBShallowCopyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBShallowCopyModel.m; sourceTree = "<group>"; };
+		B1D7E3FD2043A5D700AE2C08 /* LYBDeepCopyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBDeepCopyModel.h; sourceTree = "<group>"; };
+		B1D7E3FE2043A5D700AE2C08 /* LYBDeepCopyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBDeepCopyModel.m; sourceTree = "<group>"; };
+		B1F03023204D1BD40085493A /* LYBProtocolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBProtocolViewController.h; sourceTree = "<group>"; };
+		B1F03024204D1BD40085493A /* LYBProtocolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBProtocolViewController.m; sourceTree = "<group>"; };
+		B1F03026204D1C660085493A /* LYBTestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBTestProtocol.h; sourceTree = "<group>"; };
+		B1F03027204D1DA50085493A /* LYBPerson1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBPerson1.h; sourceTree = "<group>"; };
+		B1F03028204D1DA50085493A /* LYBPerson1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBPerson1.m; sourceTree = "<group>"; };
+		B1F0302A204D1DB90085493A /* LYBPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBPerson2.h; sourceTree = "<group>"; };
+		B1F0302B204D1DB90085493A /* LYBPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBPerson2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +176,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B11C46532126C55300D89D8B /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				B11C46542126C56600D89D8B /* LYBLockViewController.h */,
+				B11C46552126C56600D89D8B /* LYBLockViewController.m */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		B12516DF206C778200D3A758 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				B12516E0206C787900D3A758 /* LYBBlockViewController.h */,
+				B12516E1206C787900D3A758 /* LYBBlockViewController.m */,
+				B12516E3206C78AF00D3A758 /* LYBBlockView.h */,
+				B12516E4206C78AF00D3A758 /* LYBBlockView.m */,
+				B12516E6206C816F00D3A758 /* LYBBlockModel.h */,
+				B12516E7206C816F00D3A758 /* LYBBlockModel.m */,
+				B160092620D91DCC00FE75C2 /* UIButton+LYBExtern.h */,
+				B160092720D91DCC00FE75C2 /* UIButton+LYBExtern.m */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		B12D2ACA207462BA001999E3 /* radarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B12D2ACB207462F9001999E3 /* LYBRadarDemoViewController.h */,
+				B12D2ACC207462F9001999E3 /* LYBRadarDemoViewController.m */,
+				B12D2ACE2074649E001999E3 /* LYBRadarView.h */,
+				B12D2ACF2074649E001999E3 /* LYBRadarView.m */,
+				B12D2AD120746524001999E3 /* LYBSectorView.h */,
+				B12D2AD220746524001999E3 /* LYBSectorView.m */,
+			);
+			path = radarDemo;
+			sourceTree = "<group>";
+		};
+		B12D2AD42074661E001999E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B12D2AD52074661E001999E3 /* category */,
+				B12D2AD920746B59001999E3 /* PrefixHeader.pch */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B12D2AD52074661E001999E3 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				B12D2AD6207466AA001999E3 /* UIColor+Extension.h */,
+				B12D2AD7207466AA001999E3 /* UIColor+Extension.m */,
+				B14FF2D5207C5888006CD5ED /* UIView+Animation.h */,
+				B14FF2D6207C5888006CD5ED /* UIView+Animation.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		B150B3702133F424008C16CA /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B150B3712133F447008C16CA /* LYBMediaViewController.h */,
+				B150B3722133F447008C16CA /* LYBMediaViewController.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		B172175A207AFABD0024B212 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				B172175B207AFB100024B212 /* LYBTimerClass.h */,
+				B172175C207AFB100024B212 /* LYBTimerClass.m */,
+				B172175E207AFD580024B212 /* LYBTimerViewController.h */,
+				B172175F207AFD580024B212 /* LYBTimerViewController.m */,
+				B1721761207AFD970024B212 /* NSTimer+LYBBlockSupport.h */,
+				B1721762207AFD970024B212 /* NSTimer+LYBBlockSupport.m */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		B1A025E2210AC06A0053C137 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				B1A025E3210AC0820053C137 /* LYBSortViewController.h */,
+				B1A025E4210AC0820053C137 /* LYBSortViewController.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		B1C6460B21002FBF00F680BD /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6460C21002FEC00F680BD /* LYBRuntimeViewController.h */,
+				B1C6460D21002FEC00F680BD /* LYBRuntimeViewController.m */,
+				B1C6460F210030B500F680BD /* LYBAutoDictionnary.h */,
+				B1C64610210030B500F680BD /* LYBAutoDictionnary.m */,
+				B1C64612210065D600F680BD /* LYBTestMethod.h */,
+				B1C64613210065D600F680BD /* LYBTestMethod.m */,
+				B1C6461521008D0B00F680BD /* LYBInvocation.h */,
+				B1C6461621008D0B00F680BD /* LYBInvocation.m */,
+				B155583C2107122A00A45E41 /* NSObject+LYBKVO.h */,
+				B155583D2107122A00A45E41 /* NSObject+LYBKVO.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		B1D2DB562044FAB500DEE835 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B1D2DB612044FBFF00DEE835 /* CNCilrcleCollectionViewCell.h */,
+				B1D2DB602044FBFF00DEE835 /* CNCilrcleCollectionViewCell.m */,
+				B1D2DB5D2044FBCE00DEE835 /* DSCircularLayout.h */,
+				B1D2DB5B2044FBCE00DEE835 /* DSCircularLayout.m */,
+				B1D2DB5C2044FBCE00DEE835 /* MagicCircleLayout.h */,
+				B1D2DB5A2044FBCE00DEE835 /* MagicCircleLayout.m */,
+				B1D2DB572044FAE000DEE835 /* LYBCircelCollectionViewController.h */,
+				B1D2DB582044FAE000DEE835 /* LYBCircelCollectionViewController.m */,
+				B1D2DB632044FCEE00DEE835 /* LYBCellModel.h */,
+				B1D2DB642044FCEE00DEE835 /* LYBCellModel.m */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
+		B1D5780920808EEE00FAEE96 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5780A20808F0400FAEE96 /* LYBThreadViewController.h */,
+				B1D5780B20808F0400FAEE96 /* LYBThreadViewController.m */,
+			);
+			path = thread;
+			sourceTree = "<group>";
+		};
 		B1D7E3B520439E4C00AE2C08 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +330,18 @@
 		B1D7E3C020439E4C00AE2C08 /* OCStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B150B3702133F424008C16CA /* Media */,
+				B11C46532126C55300D89D8B /* Lock */,
+				B1A025E2210AC06A0053C137 /* Sort */,
+				B1C6460B21002FBF00F680BD /* runtime */,
+				B1D5780920808EEE00FAEE96 /* thread */,
+				B172175A207AFABD0024B212 /* NSTimer */,
+				B12D2ACA207462BA001999E3 /* radarDemo */,
+				B12516DF206C778200D3A758 /* block */,
+				B1F03022204D1BC10085493A /* protocol */,
+				B1D2DB562044FAB500DEE835 /* collectionView */,
+				B1D7E3F62043A56D00AE2C08 /* copyDemo */,
+				B12D2AD42074661E001999E3 /* Utils */,
 				B1D7E3C120439E4C00AE2C08 /* AppDelegate.h */,
 				B1D7E3C220439E4C00AE2C08 /* AppDelegate.m */,
 				B1D7E3C420439E4C00AE2C08 /* ViewController.h */,
@@ -130,6 +371,33 @@
 				B1D7E3E720439E4D00AE2C08 /* Info.plist */,
 			);
 			path = OCStudyDemoUITests;
+			sourceTree = "<group>";
+		};
+		B1D7E3F62043A56D00AE2C08 /* copyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B1D7E3F72043A56D00AE2C08 /* LYBCopyViewController.h */,
+				B1D7E3F82043A56D00AE2C08 /* LYBCopyViewController.m */,
+				B1D7E3FA2043A5C700AE2C08 /* LYBShallowCopyModel.h */,
+				B1D7E3FB2043A5C700AE2C08 /* LYBShallowCopyModel.m */,
+				B1D7E3FD2043A5D700AE2C08 /* LYBDeepCopyModel.h */,
+				B1D7E3FE2043A5D700AE2C08 /* LYBDeepCopyModel.m */,
+			);
+			path = copyDemo;
+			sourceTree = "<group>";
+		};
+		B1F03022204D1BC10085493A /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B1F03023204D1BD40085493A /* LYBProtocolViewController.h */,
+				B1F03024204D1BD40085493A /* LYBProtocolViewController.m */,
+				B1F03026204D1C660085493A /* LYBTestProtocol.h */,
+				B1F03027204D1DA50085493A /* LYBPerson1.h */,
+				B1F03028204D1DA50085493A /* LYBPerson1.m */,
+				B1F0302A204D1DB90085493A /* LYBPerson2.h */,
+				B1F0302B204D1DB90085493A /* LYBPerson2.m */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +462,8 @@
 		B1D7E3B620439E4C00AE2C08 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				CLASSPREFIX = LYB;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Albin;
 				TargetAttributes = {
 					B1D7E3BD20439E4C00AE2C08 = {
@@ -266,8 +535,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D7E3C620439E4C00AE2C08 /* ViewController.m in Sources */,
+				B1F0302C204D1DB90085493A /* LYBPerson2.m in Sources */,
+				B1D2DB592044FAE000DEE835 /* LYBCircelCollectionViewController.m in Sources */,
+				B12516E2206C787900D3A758 /* LYBBlockViewController.m in Sources */,
+				B1D5780C20808F0400FAEE96 /* LYBThreadViewController.m in Sources */,
+				B1D7E3FC2043A5C700AE2C08 /* LYBShallowCopyModel.m in Sources */,
+				B155583E2107122A00A45E41 /* NSObject+LYBKVO.m in Sources */,
+				B11C46562126C56600D89D8B /* LYBLockViewController.m in Sources */,
 				B1D7E3D120439E4C00AE2C08 /* main.m in Sources */,
+				B12D2AD02074649E001999E3 /* LYBRadarView.m in Sources */,
+				B12516E5206C78AF00D3A758 /* LYBBlockView.m in Sources */,
+				B1721763207AFD970024B212 /* NSTimer+LYBBlockSupport.m in Sources */,
+				B1C64614210065D600F680BD /* LYBTestMethod.m in Sources */,
+				B1A025E5210AC0820053C137 /* LYBSortViewController.m in Sources */,
+				B1721760207AFD580024B212 /* LYBTimerViewController.m in Sources */,
+				B12516E8206C816F00D3A758 /* LYBBlockModel.m in Sources */,
+				B1D2DB622044FBFF00DEE835 /* CNCilrcleCollectionViewCell.m in Sources */,
+				B160092820D91DCC00FE75C2 /* UIButton+LYBExtern.m in Sources */,
+				B1C6461721008D0B00F680BD /* LYBInvocation.m in Sources */,
+				B1C64611210030B500F680BD /* LYBAutoDictionnary.m in Sources */,
+				B12D2AD8207466AA001999E3 /* UIColor+Extension.m in Sources */,
+				B1D2DB5F2044FBCE00DEE835 /* DSCircularLayout.m in Sources */,
 				B1D7E3C320439E4C00AE2C08 /* AppDelegate.m in Sources */,
+				B14FF2D7207C5888006CD5ED /* UIView+Animation.m in Sources */,
+				B12D2AD320746524001999E3 /* LYBSectorView.m in Sources */,
+				B1D7E3FF2043A5D700AE2C08 /* LYBDeepCopyModel.m in Sources */,
+				B150B3732133F447008C16CA /* LYBMediaViewController.m in Sources */,
+				B1D7E3F92043A56D00AE2C08 /* LYBCopyViewController.m in Sources */,
+				B172175D207AFB100024B212 /* LYBTimerClass.m in Sources */,
+				B1D2DB5E2044FBCE00DEE835 /* MagicCircleLayout.m in Sources */,
+				B12D2ACD207462F9001999E3 /* LYBRadarDemoViewController.m in Sources */,
+				B1F03025204D1BD40085493A /* LYBProtocolViewController.m in Sources */,
+				B1F03029204D1DA50085493A /* LYBPerson1.m in Sources */,
+				B1D2DB652044FCEE00DEE835 /* LYBCellModel.m in Sources */,
+				B1C6460E21002FEC00F680BD /* LYBRuntimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +637,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -343,6 +645,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -391,6 +694,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -398,6 +702,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -431,7 +736,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 773KFNZFJ9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Albin.OCStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +753,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 773KFNZFJ9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Albin.OCStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
