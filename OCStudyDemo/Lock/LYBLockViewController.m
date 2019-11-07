@@ -52,6 +52,7 @@
             NSLog(@"线程B 执行完毕");
         }
     });
+    //线程A、B无顺序执行（因为GlobalQueue是并行队列）
 }
 
 //2.2、NSLock 对多线程需要安全的代码加锁
@@ -80,7 +81,7 @@
         NSLog(@"线程B 执行完毕");
         [lock unlock];
     });
-    
+    // 线程A、B 无先后顺序执行
 }
 
 //2.3、NSCondition 条件锁，只有达到条件之后，才会执行锁操作，否则不会对数据进行加锁
@@ -126,7 +127,6 @@
 }
 
 //2.4、NSRecursiveLock 递归锁，同一个线程可以多次加锁，但是不会引起死锁,如果是NSLock，则会导致崩溃
-
 - (void)reverseDebug:(NSUInteger )num lock:(NSRecursiveLock *)lock
 {
     [lock lock];
@@ -151,8 +151,10 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self reverseDebug:5 lock:lock];
+        NSLog(@"end");
     });
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -32,29 +32,29 @@ dispatch_async(dispatch_get_main_queue(),block);\
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UIImageView *imgView = [[UIImageView alloc]init];
-//    [self.view addSubview:imgView];
-//    imgView.center = self.view.center;
-//    imgView.backgroundColor = [UIColor redColor];
-//    _imageView = imgView;
-//
-//    dispatch_queue_t queue = dispatch_queue_create("Albin", DISPATCH_QUEUE_CONCURRENT);
-//    dispatch_async(queue, ^{
-//        NSLog(@"isMain-->%d",[NSThread isMainThread]);
-//
-//        NSString *imageStr = @"http://www.egouz.com/uploadfile/2015/0305/20150305103626911.jpg";
-//        NSURL *imageUrl = [NSURL URLWithString:imageStr];
-//        NSData *imageData = [NSData dataWithContentsOfURL:imageUrl];
-//        UIImage *image = [UIImage imageWithData:imageData];
-//
-//        dispatch_main_async_safe(^{
-//            NSLog(@"isMain-->%d",[NSThread isMainThread]);
-//            imgView.image = image;
-//            CGPoint center = imgView.center;
-//            [imgView sizeToFit];
-//            imgView.center = center;
-//        });
-//    });
+    UIImageView *imgView = [[UIImageView alloc]init];
+    [self.view addSubview:imgView];
+    imgView.center = self.view.center;
+    imgView.backgroundColor = [UIColor redColor];
+    _imageView = imgView;
+
+    dispatch_queue_t queue = dispatch_queue_create("Albin", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        NSLog(@"isMain-->%d",[NSThread isMainThread]);
+
+        NSString *imageStr = @"http://www.egouz.com/uploadfile/2015/0305/20150305103626911.jpg";
+        NSURL *imageUrl = [NSURL URLWithString:imageStr];
+        NSData *imageData = [NSData dataWithContentsOfURL:imageUrl];
+        UIImage *image = [UIImage imageWithData:imageData];
+
+        dispatch_main_async_safe(^{
+            NSLog(@"isMain-->%d",[NSThread isMainThread]);
+            imgView.image = image;
+            CGPoint center = imgView.center;
+            [imgView sizeToFit];
+            imgView.center = center;
+        });
+    });
     
     
     
@@ -68,11 +68,13 @@ dispatch_async(dispatch_get_main_queue(),block);\
     view.backgroundColor = [UIColor redColor];
     [self.view addSubview:view];
     
-    view.layer.anchorPoint = CGPointMake(0.5, 1);
+    view.layer.anchorPoint = CGPointMake(0.5, 0.5);
     view.layer.affineTransform = CGAffineTransformMakeRotation(M_PI/4);
     view.center = CGPointMake(view.center.x, view.center.y+view.frame.size.height/2);
     
 }
+
+
 
 - (void)download{
     NSURL *url = [NSURL URLWithString:@"http://www.egouz.com/uploadfile/2015/0305/20150305103626911.jpg"];
@@ -206,6 +208,10 @@ dispatch_async(dispatch_get_main_queue(),block);\
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    NSLog(@"dealloc-->%@",NSStringFromClass([self class]));
 }
 
 /*

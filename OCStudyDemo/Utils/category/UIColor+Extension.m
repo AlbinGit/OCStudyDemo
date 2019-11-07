@@ -52,4 +52,12 @@
     return [UIColor colorWithRed:(float)(red/255.f) green:(float)(green/255.f) blue:(float)(blue/255.f) alpha:aAlpha];
 }
 
++ (UIColor *)randomColor {
+    unsigned int r = arc4random() % 255;
+    unsigned int g = arc4random() % 255;
+    unsigned int b = arc4random() % 255;
+    return [self colorWithRed:(CGFloat)(r/255.0) green:(CGFloat)(g/255.0) blue:(CGFloat)(b/255.0) alpha:1];
+}
+
+
 @end

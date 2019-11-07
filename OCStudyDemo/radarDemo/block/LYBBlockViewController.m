@@ -9,6 +9,7 @@
 #import "LYBBlockViewController.h"
 #import "LYBBlockView.h"
 #import "LYBBlockModel.h"
+
 @interface LYBBlockViewController ()
 
 @property (nonatomic ,assign) NSInteger i;
@@ -24,10 +25,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self test1];
+//    [self test1];
 //    [self test2];
-    [self test3];
-    [self test4];
+//    [self test3];
+//    [self test4];
+    [self test6];
+}
+
+- (void)test5{
+    int a = 1;
+    void (^block)(void) = ^{
+        NSLog(@"a-->%d",a);
+    };
+    a = 2;
+    block();
+}
+
+- (void)test6{
+    __block int a = 1;
+    void (^block)(void) = ^{
+        NSLog(@"a-->%d",a);
+        a = 3;
+    };
+    a = 2;
+    block();
+    NSLog(@"block执行后 a-->%d",a);
+}
+
+- (void)test7{
+    static int a = 1;
+    void (^block)(void) = ^{
+        NSLog(@"a-->%d",a);
+    };
+    a = 2;
+    block();
+}
+
+int a = 1;
+- (void)test8{
+    void (^block)(void) = ^{
+        NSLog(@"a-->%d",a);
+    };
+    a = 2;
+    block();
 }
 
 - (void)test4{

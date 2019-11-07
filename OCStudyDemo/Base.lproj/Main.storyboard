@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -77,6 +76,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25n-Uk-h95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1278" y="154"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="zcC-hp-9VX">
+            <objects>
+                <viewController storyboardIdentifier="LYBAnimationViewController" id="XDY-tl-XFN" customClass="LYBAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eoo-Cm-Dqs"/>
+                        <viewControllerLayoutGuide type="bottom" id="h9U-Ey-bNy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VEf-n9-BL9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ2-tc-Bon">
+                                <rect key="frame" x="157.5" y="627" width="60" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.13725455659999999" blue="0.080562850640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YWp-O4-vmc"/>
+                                    <constraint firstAttribute="width" constant="60" id="jWn-eY-J4r"/>
+                                </constraints>
+                                <state key="normal" title="开始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAction:" destination="XDY-tl-XFN" eventType="touchUpInside" id="jw4-XL-Bp6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h9U-Ey-bNy" firstAttribute="top" secondItem="WZ2-tc-Bon" secondAttribute="bottom" constant="10" id="YEy-fj-Yhm"/>
+                            <constraint firstItem="WZ2-tc-Bon" firstAttribute="centerX" secondItem="VEf-n9-BL9" secondAttribute="centerX" id="bSP-S0-Mgc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z80-eb-od6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="148.87556221889056"/>
         </scene>
     </scenes>
 </document>

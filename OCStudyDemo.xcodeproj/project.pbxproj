@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA21A5B82351B823000CEBAB /* LYBMethodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA21A5B72351B823000CEBAB /* LYBMethodModel.m */; };
+		AA84B7692372D676005782DE /* LZThreadFreezeMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = AA84B7652372D676005782DE /* LZThreadFreezeMonitor.m */; };
+		AA84B76A2372D676005782DE /* LZThreadBacktrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AA84B7672372D676005782DE /* LZThreadBacktrace.m */; };
+		AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */; };
 		B11C46562126C56600D89D8B /* LYBLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C46552126C56600D89D8B /* LYBLockViewController.m */; };
 		B12516E2206C787900D3A758 /* LYBBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12516E1206C787900D3A758 /* LYBBlockViewController.m */; };
 		B12516E5206C78AF00D3A758 /* LYBBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12516E4206C78AF00D3A758 /* LYBBlockView.m */; };
@@ -15,6 +19,11 @@
 		B12D2AD02074649E001999E3 /* LYBRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2ACF2074649E001999E3 /* LYBRadarView.m */; };
 		B12D2AD320746524001999E3 /* LYBSectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2AD220746524001999E3 /* LYBSectorView.m */; };
 		B12D2AD8207466AA001999E3 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D2AD7207466AA001999E3 /* UIColor+Extension.m */; };
+		B14DB67522F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14DB67422F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.m */; };
+		B14DB67822F95EA500BC2044 /* LYBGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14DB67722F95EA500BC2044 /* LYBGCDViewController.m */; };
+		B14DB67B22F97BBF00BC2044 /* LYBNSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14DB67A22F97BBF00BC2044 /* LYBNSOperationViewController.m */; };
+		B14DB67E22F9958A00BC2044 /* LYBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B14DB67D22F9958A00BC2044 /* LYBOperation.m */; };
+		B14DB68222FAC44900BC2044 /* LYBAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14DB68122FAC44900BC2044 /* LYBAnimationViewController.m */; };
 		B14FF2D7207C5888006CD5ED /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = B14FF2D6207C5888006CD5ED /* UIView+Animation.m */; };
 		B150B3732133F447008C16CA /* LYBMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B150B3722133F447008C16CA /* LYBMediaViewController.m */; };
 		B155583E2107122A00A45E41 /* NSObject+LYBKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = B155583D2107122A00A45E41 /* NSObject+LYBKVO.m */; };
@@ -67,6 +76,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA21A5B62351B823000CEBAB /* LYBMethodModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBMethodModel.h; sourceTree = "<group>"; };
+		AA21A5B72351B823000CEBAB /* LYBMethodModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBMethodModel.m; sourceTree = "<group>"; };
+		AA84B7652372D676005782DE /* LZThreadFreezeMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZThreadFreezeMonitor.m; sourceTree = "<group>"; };
+		AA84B7662372D676005782DE /* LZThreadBacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZThreadBacktrace.h; sourceTree = "<group>"; };
+		AA84B7672372D676005782DE /* LZThreadBacktrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZThreadBacktrace.m; sourceTree = "<group>"; };
+		AA84B7682372D676005782DE /* LZThreadFreezeMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZThreadFreezeMonitor.h; sourceTree = "<group>"; };
+		AACF0425233DAC1400CBDD6F /* LYBAttributeStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBAttributeStringViewController.h; sourceTree = "<group>"; };
+		AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBAttributeStringViewController.m; sourceTree = "<group>"; };
 		B11C46542126C56600D89D8B /* LYBLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBLockViewController.h; sourceTree = "<group>"; };
 		B11C46552126C56600D89D8B /* LYBLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBLockViewController.m; sourceTree = "<group>"; };
 		B12516E0206C787900D3A758 /* LYBBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBBlockViewController.h; sourceTree = "<group>"; };
@@ -84,6 +101,16 @@
 		B12D2AD6207466AA001999E3 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		B12D2AD7207466AA001999E3 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		B12D2AD920746B59001999E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B14DB67322F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYBWeak&unsafe_unretainedViewController.h"; sourceTree = "<group>"; };
+		B14DB67422F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LYBWeak&unsafe_unretainedViewController.m"; sourceTree = "<group>"; };
+		B14DB67622F95EA500BC2044 /* LYBGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBGCDViewController.h; sourceTree = "<group>"; };
+		B14DB67722F95EA500BC2044 /* LYBGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBGCDViewController.m; sourceTree = "<group>"; };
+		B14DB67922F97BBF00BC2044 /* LYBNSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBNSOperationViewController.h; sourceTree = "<group>"; };
+		B14DB67A22F97BBF00BC2044 /* LYBNSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBNSOperationViewController.m; sourceTree = "<group>"; };
+		B14DB67C22F9958A00BC2044 /* LYBOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBOperation.h; sourceTree = "<group>"; };
+		B14DB67D22F9958A00BC2044 /* LYBOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBOperation.m; sourceTree = "<group>"; };
+		B14DB68022FAC44900BC2044 /* LYBAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBAnimationViewController.h; sourceTree = "<group>"; };
+		B14DB68122FAC44900BC2044 /* LYBAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBAnimationViewController.m; sourceTree = "<group>"; };
 		B14FF2D5207C5888006CD5ED /* UIView+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		B14FF2D6207C5888006CD5ED /* UIView+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		B150B3712133F447008C16CA /* LYBMediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBMediaViewController.h; sourceTree = "<group>"; };
@@ -176,6 +203,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA7028002372BACC0045F677 /* Kartun */ = {
+			isa = PBXGroup;
+			children = (
+				AA84B7662372D676005782DE /* LZThreadBacktrace.h */,
+				AA84B7672372D676005782DE /* LZThreadBacktrace.m */,
+				AA84B7682372D676005782DE /* LZThreadFreezeMonitor.h */,
+				AA84B7652372D676005782DE /* LZThreadFreezeMonitor.m */,
+			);
+			path = Kartun;
+			sourceTree = "<group>";
+		};
+		AACF0424233DABF100CBDD6F /* AttributeString */ = {
+			isa = PBXGroup;
+			children = (
+				AACF0425233DAC1400CBDD6F /* LYBAttributeStringViewController.h */,
+				AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */,
+				AA21A5B62351B823000CEBAB /* LYBMethodModel.h */,
+				AA21A5B72351B823000CEBAB /* LYBMethodModel.m */,
+			);
+			path = AttributeString;
+			sourceTree = "<group>";
+		};
 		B11C46532126C55300D89D8B /* Lock */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +252,7 @@
 		B12D2ACA207462BA001999E3 /* radarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B12516DF206C778200D3A758 /* block */,
 				B12D2ACB207462F9001999E3 /* LYBRadarDemoViewController.h */,
 				B12D2ACC207462F9001999E3 /* LYBRadarDemoViewController.m */,
 				B12D2ACE2074649E001999E3 /* LYBRadarView.h */,
@@ -231,6 +281,24 @@
 				B14FF2D6207C5888006CD5ED /* UIView+Animation.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		B14DB67222F8123200BC2044 /* Weak&unsafe_unretained */ = {
+			isa = PBXGroup;
+			children = (
+				B14DB67322F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.h */,
+				B14DB67422F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.m */,
+			);
+			path = "Weak&unsafe_unretained";
+			sourceTree = "<group>";
+		};
+		B14DB67F22FAC43300BC2044 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B14DB68022FAC44900BC2044 /* LYBAnimationViewController.h */,
+				B14DB68122FAC44900BC2044 /* LYBAnimationViewController.m */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		B150B3702133F424008C16CA /* Media */ = {
@@ -303,6 +371,12 @@
 			children = (
 				B1D5780A20808F0400FAEE96 /* LYBThreadViewController.h */,
 				B1D5780B20808F0400FAEE96 /* LYBThreadViewController.m */,
+				B14DB67622F95EA500BC2044 /* LYBGCDViewController.h */,
+				B14DB67722F95EA500BC2044 /* LYBGCDViewController.m */,
+				B14DB67922F97BBF00BC2044 /* LYBNSOperationViewController.h */,
+				B14DB67A22F97BBF00BC2044 /* LYBNSOperationViewController.m */,
+				B14DB67C22F9958A00BC2044 /* LYBOperation.h */,
+				B14DB67D22F9958A00BC2044 /* LYBOperation.m */,
 			);
 			path = thread;
 			sourceTree = "<group>";
@@ -330,6 +404,10 @@
 		B1D7E3C020439E4C00AE2C08 /* OCStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA7028002372BACC0045F677 /* Kartun */,
+				AACF0424233DABF100CBDD6F /* AttributeString */,
+				B14DB67F22FAC43300BC2044 /* Animation */,
+				B14DB67222F8123200BC2044 /* Weak&unsafe_unretained */,
 				B150B3702133F424008C16CA /* Media */,
 				B11C46532126C55300D89D8B /* Lock */,
 				B1A025E2210AC06A0053C137 /* Sort */,
@@ -337,7 +415,6 @@
 				B1D5780920808EEE00FAEE96 /* thread */,
 				B172175A207AFABD0024B212 /* NSTimer */,
 				B12D2ACA207462BA001999E3 /* radarDemo */,
-				B12516DF206C778200D3A758 /* block */,
 				B1F03022204D1BC10085493A /* protocol */,
 				B1D2DB562044FAB500DEE835 /* collectionView */,
 				B1D7E3F62043A56D00AE2C08 /* copyDemo */,
@@ -534,7 +611,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA84B76A2372D676005782DE /* LZThreadBacktrace.m in Sources */,
 				B1D7E3C620439E4C00AE2C08 /* ViewController.m in Sources */,
+				B14DB67E22F9958A00BC2044 /* LYBOperation.m in Sources */,
 				B1F0302C204D1DB90085493A /* LYBPerson2.m in Sources */,
 				B1D2DB592044FAE000DEE835 /* LYBCircelCollectionViewController.m in Sources */,
 				B12516E2206C787900D3A758 /* LYBBlockViewController.m in Sources */,
@@ -543,9 +622,12 @@
 				B155583E2107122A00A45E41 /* NSObject+LYBKVO.m in Sources */,
 				B11C46562126C56600D89D8B /* LYBLockViewController.m in Sources */,
 				B1D7E3D120439E4C00AE2C08 /* main.m in Sources */,
+				AA21A5B82351B823000CEBAB /* LYBMethodModel.m in Sources */,
 				B12D2AD02074649E001999E3 /* LYBRadarView.m in Sources */,
 				B12516E5206C78AF00D3A758 /* LYBBlockView.m in Sources */,
+				AA84B7692372D676005782DE /* LZThreadFreezeMonitor.m in Sources */,
 				B1721763207AFD970024B212 /* NSTimer+LYBBlockSupport.m in Sources */,
+				B14DB68222FAC44900BC2044 /* LYBAnimationViewController.m in Sources */,
 				B1C64614210065D600F680BD /* LYBTestMethod.m in Sources */,
 				B1A025E5210AC0820053C137 /* LYBSortViewController.m in Sources */,
 				B1721760207AFD580024B212 /* LYBTimerViewController.m in Sources */,
@@ -554,14 +636,18 @@
 				B160092820D91DCC00FE75C2 /* UIButton+LYBExtern.m in Sources */,
 				B1C6461721008D0B00F680BD /* LYBInvocation.m in Sources */,
 				B1C64611210030B500F680BD /* LYBAutoDictionnary.m in Sources */,
+				AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */,
 				B12D2AD8207466AA001999E3 /* UIColor+Extension.m in Sources */,
 				B1D2DB5F2044FBCE00DEE835 /* DSCircularLayout.m in Sources */,
 				B1D7E3C320439E4C00AE2C08 /* AppDelegate.m in Sources */,
+				B14DB67B22F97BBF00BC2044 /* LYBNSOperationViewController.m in Sources */,
 				B14FF2D7207C5888006CD5ED /* UIView+Animation.m in Sources */,
 				B12D2AD320746524001999E3 /* LYBSectorView.m in Sources */,
 				B1D7E3FF2043A5D700AE2C08 /* LYBDeepCopyModel.m in Sources */,
 				B150B3732133F447008C16CA /* LYBMediaViewController.m in Sources */,
+				B14DB67822F95EA500BC2044 /* LYBGCDViewController.m in Sources */,
 				B1D7E3F92043A56D00AE2C08 /* LYBCopyViewController.m in Sources */,
+				B14DB67522F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.m in Sources */,
 				B172175D207AFB100024B212 /* LYBTimerClass.m in Sources */,
 				B1D2DB5E2044FBCE00DEE835 /* MagicCircleLayout.m in Sources */,
 				B12D2ACD207462F9001999E3 /* LYBRadarDemoViewController.m in Sources */,

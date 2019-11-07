@@ -12,4 +12,19 @@
 #import "UIColor+Extension.h"
 #import "UIView+Animation.h"
 
+#pragma mark - ====宽高
+//基本宽高
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define IS_iPhoneX ([UIScreen mainScreen].bounds.size.height>=812)
+#define STATUS_HEIGHT ((IS_iPhoneX) ? (44) : (20))
+#define NAVVIEW_HEIGHT ((IS_iPhoneX) ? (88) : (64))
+#define SEGMENT_HEIGHT 44.*HEIGHT_BASE
+#define TABBAR_HEIGHT ((IS_iPhoneX) ? (83) : (49))
+#define BottomSafeDistance ((IS_iPhoneX) ? (34) : (0))
+
+//适配宽高
+#define WIDTH_BASE (SCREEN_WIDTH/375)
+#define HEIGHT_BASE ((IS_iPhoneX) ? (WIDTH_BASE) : (SCREEN_HEIGHT/667))
+
 #endif /* PrefixHeader_pch */

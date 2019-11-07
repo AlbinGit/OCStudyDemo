@@ -16,4 +16,7 @@
 
 + (UIColor *)getColor:(NSString *)hexColor andAlpha:(CGFloat)aAlpha;
 
+//随机获取颜色
++ (UIColor *)randomColor;
+
 @end

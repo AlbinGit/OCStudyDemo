@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "LZThreadFreezeMonitor.h"
 @interface ViewController ()
 
 @property (nonatomic ,strong) NSArray *dataArray;
@@ -16,45 +16,88 @@
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     _dataArray = @[@{@"title":@"浅拷贝&深拷贝",
                      @"class":@"LYBCopyViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"圆形collectionView",
                      @"class":@"LYBCircelCollectionViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"协议",
                      @"class":@"LYBProtocolViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"Block",
                      @"class":@"LYBBlockViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"雷达demo",
                      @"class":@"LYBRadarDemoViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"thread",
                      @"class":@"LYBThreadViewController",
+                     @"type":@"Normal",
+                     },
+                   @{@"title":@"GCD",
+                     @"class":@"LYBGCDViewController",
+                     @"type":@"Normal",
+                     },
+                   @{@"title":@"NSOperation",
+                     @"class":@"LYBNSOperationViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"runtime",
                      @"class":@"LYBRuntimeViewController",
+                     @"type":@"StoryBoard",
                      },
                    @{@"title":@"NSTimer",
                      @"class":@"LYBTimerViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"Sort",
                      @"class":@"LYBSortViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"Lock",
                      @"class":@"LYBLockViewController",
+                     @"type":@"Normal",
                      },
                    @{@"title":@"Media",
                      @"class":@"LYBMediaViewController",
+                     @"type":@"Normal",
+                     },
+                   @{@"title":@"weak&unsafe_unretained",
+                     @"class":@"LYBWeak_unsafe_unretainedViewController",
+                     @"type":@"Normal",
+                     },
+                   @{@"title":@"Animation",
+                     @"class":@"LYBAnimationViewController",
+                     @"type":@"StoryBoard",
+                     },
+                   @{@"title":@"AttributeString",
+                     @"class":@"LYBAttributeStringViewController",
+                     @"type":@"Normal",
                      },
                    ];
     
+    [[LZThreadFreezeMonitor sharedInstance] startMonitor];
 }
+
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count;
@@ -73,7 +116,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc;
     NSString *className = _dataArray[indexPath.row][@"class"];
-    if ([className isEqualToString:@"LYBRuntimeViewController"]) {
+    NSString *type = _dataArray[indexPath.row][@"type"];
+    if ([type isEqualToString:@"StoryBoard"]) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         vc = [storyboard instantiateViewControllerWithIdentifier:className];
     }else{
@@ -82,8 +126,6 @@
     vc.title = _dataArray[indexPath.row][@"title"];
     vc.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:vc animated:YES];
-    
-    
 }
 
 
