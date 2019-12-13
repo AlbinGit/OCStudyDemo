@@ -571,8 +571,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1D7E3EA20439E4D00AE2C08 /* Build configuration list for PBXNativeTarget "OCStudyDemo" */;
 			buildPhases = (
+				AAB4A01E238F5E26001E9733 /* Run Script */,
 				A26632FC297750ED3A2ED56E /* [CP] Check Pods Manifest.lock */,
-				AAB4A01E238F5E26001E9733 /* ShellScript */,
 				B1D7E3BA20439E4C00AE2C08 /* Sources */,
 				B1D7E3BB20439E4C00AE2C08 /* Frameworks */,
 				B1D7E3BC20439E4C00AE2C08 /* Resources */,
@@ -730,10 +730,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo-OCStudyDemoUITests/Pods-OCStudyDemo-OCStudyDemoUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -762,7 +766,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AAB4A01E238F5E26001E9733 /* ShellScript */ = {
+		AAB4A01E238F5E26001E9733 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -771,6 +775,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -809,10 +814,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo/Pods-OCStudyDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1049,6 +1058,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8CC2R2ZVM;
 				ENABLE_BITCODE = NO;
+				FLUTTER_ROOT = /Applications/flutter;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
@@ -1068,6 +1078,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8CC2R2ZVM;
 				ENABLE_BITCODE = NO;
+				FLUTTER_ROOT = /Applications/flutter;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;

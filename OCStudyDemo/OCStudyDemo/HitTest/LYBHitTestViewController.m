@@ -57,6 +57,14 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+}
+
 - (void)tapA {
     NSLog(@"A");
 }

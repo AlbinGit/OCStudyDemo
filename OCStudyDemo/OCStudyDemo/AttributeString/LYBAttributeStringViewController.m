@@ -29,22 +29,23 @@
     
     
 //    NSString *str = @"aj33啊¥1嗷¥5.89嗷嗷99.对的";
-    NSString *str = @"a的啊";
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 50)];
+    NSString *str = @"汉字";
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, SCREEN_WIDTH, 50)];
     label.backgroundColor = [UIColor yellowColor];
-    label.numberOfLines = 0;
     [self.view addSubview:label];
+    label.numberOfLines = 0;
     label.attributedText = [self jdBlockFontWithString:str stringFont:[UIFont systemFontOfSize:14] stringColor:[UIColor blackColor] numberFontSize:30 numberColor:[UIColor redColor]];
-    CGSize labelSize = [label.attributedText boundingRectWithSize:CGSizeMake(SCREEN_WIDTH, MAXFLOAT) options:NSStringDrawingUsesFontLeading  context:nil].size;
-    label.bounds = CGRectMake(0, 0, labelSize.width, labelSize.height);
+    CGSize labelSize = [label.attributedText boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin  context:nil].size;
+    label.bounds = CGRectMake(0, 0, labelSize.width, label.font.pointSize - label.font.pointSize / 20.0);//汉字
+//    label.bounds = CGRectMake(0, 0, labelSize.width, label.font.ascender + label.font.descender);//数字
     
-    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 50)];
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, self.view.frame.size.width, 50)];
     label1.backgroundColor = [UIColor lightGrayColor];
     label1.text = str;
     label1.numberOfLines = 0;
     label1.font = [UIFont systemFontOfSize:36];
     [self.view addSubview:label1];
-    CGSize labelSize1 = [self sizeWithFont:label1.font text:label1.text maxWidth:self.view.frame.size.width maxHeight:MAXFLOAT];
+    CGSize labelSize1 = [self sizeWithFont:label1.font text:label1.text maxWidth:SCREEN_WIDTH maxHeight:MAXFLOAT];
     label1.bounds = CGRectMake(0, 0, labelSize1.width, labelSize1.height);
     
     UIView *topLine = [UIView new];
@@ -161,6 +162,13 @@
             [attributedStr addAttributes:numterAttributes range:result.range];
         }
     }
+    
+//    NSMutableParagraphStyle *pragraphStyle = [NSMutableParagraphStyle new];
+//    pragraphStyle.lineSpacing = 10;
+//    NSMutableDictionary *lineSpacingAttribute = [NSMutableDictionary dictionary];
+//    [lineSpacingAttribute setObject:pragraphStyle forKey:NSParagraphStyleAttributeName];
+//    [attributedStr addAttributes:lineSpacingAttribute range:NSMakeRange(0, string.length)];
+    
     return attributedStr;
 }
 
@@ -174,13 +182,22 @@
 
 - (CGFloat)getLabelBottomGapByFont:(UIFont *)font text:(NSString *)text {
     if ([self verifyContainChineseString:text]) {
-        return floorf((font.lineHeight - font.pointSize) / 2.0 + font.pointSize / 20.0);
+        return roundf((font.lineHeight - font.pointSize) / 2.0 + font.pointSize / 20.0);
     }
     if ([self verifyNumString:text]) {
-        return floorf(-font.descender);
+        return roundf(-font.descender);
     }
-    return floorf((font.lineHeight - font.pointSize) / 2.0 + font.pointSize / 20.0);
+    return roundf((font.lineHeight - font.pointSize) / 2.0 + font.pointSize / 20.0);
 }
+
+- (CGFloat)getNumBottomGapByFont:(UIFont *)font {
+    return roundf(-font.descender);
+}
+
+- (CGFloat)getChineseBottomGapByFont:(UIFont *)font {
+    return roundf((font.lineHeight - font.pointSize) / 2.0 + font.pointSize / 20.0);//在(font.lineHeight - font.pointSize) / 2.0的基础上每增加10个字号留白增加1像素，所以加上font.pointSize / 20.0
+}
+
 
 - (CGFloat)getLabelTopGapByFont:(UIFont *)font text:(NSString *)text {
     return (font.lineHeight - font.pointSize) / 2.0;

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <Flutter/Flutter.h>
+
 @interface ViewController ()
 
 @property (nonatomic ,strong) NSArray *dataArray;
@@ -22,6 +24,11 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -98,6 +105,10 @@
                      @"class":@"LYBHitTestViewController",
                      @"type":@"Normal",
                      },
+                   @{@"title":@"Flutter",
+                     @"class":@"FlutterViewController",
+                     @"type":@"Normal",
+                   },
                    ];
     
 }
@@ -132,6 +143,8 @@
     vc.title = _dataArray[indexPath.row][@"title"];
     vc.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:vc animated:YES];
+//    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
