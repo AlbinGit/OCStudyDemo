@@ -17,15 +17,20 @@ PODS:
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Flutter (from `../flutter_module/.ios/Flutter/engine`)
   - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - SDWebImage (~> 4.0.0)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - SDWebImage
 
 EXTERNAL SOURCES:
   Flutter:
@@ -37,7 +42,8 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   FlutterPluginRegistrant: 8855ca2b426d228cb41aa6c26c0c83b8c49e3593
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: fe0b086db11795fb246b114342d15a4f2e740d21
+PODFILE CHECKSUM: b3b7dd9d3a350dee1c1779c0cb34cf8c4a6ea85f
 
 COCOAPODS: 1.8.0
