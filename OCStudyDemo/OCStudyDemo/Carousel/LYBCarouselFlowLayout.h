@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, LYBCarouselStyle) {
-    LYBCarouselStyle_Normal,///普通样式,一张图占用整个屏幕宽度
+    LYBCarouselStyle_normal,///普通样式,一张图占用整个屏幕宽度
     LYBCarouselStyle_scale, /// 中间大两边小
 };
 
@@ -28,6 +28,8 @@ typedef NS_ENUM(NSUInteger, LYBCarouselStyle) {
  @return 实例对象
  */
 - (instancetype)initWithStyle:(LYBCarouselStyle)style;
+
+- (instancetype)initWithStyle:(LYBCarouselStyle)style cardScale:(CGFloat)cardScale;
 
 @end
 

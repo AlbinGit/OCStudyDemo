@@ -8,12 +8,11 @@
 
 #import "LYBCarouselFlowLayout.h"
 
-//居中卡片宽度与据屏幕宽度比例
-static float CardWidthScale = 0.59f;
-static float CardHeightScale = 0.59f;
-
 @interface LYBCarouselFlowLayout ()
 
+//居中卡片宽度与据屏幕宽度比例
+@property (nonatomic,assign) CGFloat cardWidthScale;
+@property (nonatomic,assign) CGFloat cardHeightScale;
 
 @end
 
@@ -22,6 +21,17 @@ static float CardHeightScale = 0.59f;
 - (instancetype)initWithStyle:(LYBCarouselStyle)style {
     if(self = [super init]) {
         _style = style;
+        _cardWidthScale = 0.3f;
+        _cardHeightScale = 0.3f;
+    }
+    return self;
+}
+
+- (instancetype)initWithStyle:(LYBCarouselStyle)style cardScale:(CGFloat)cardScale {
+    if(self = [super init]) {
+        _style = style;
+        _cardWidthScale = cardScale;
+        _cardHeightScale = cardScale;
     }
     return self;
 }
@@ -31,8 +41,8 @@ static float CardHeightScale = 0.59f;
     [super prepareLayout];
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     if (_style == LYBCarouselStyle_scale) {
-        self.sectionInset = UIEdgeInsetsMake([self insetY], [self insetX], [self insetY], [self insetX]);
-        self.itemSize = CGSizeMake([self itemWidth], [self itemHeight]);
+//        self.sectionInset = UIEdgeInsetsMake([self insetY], [self insetX], [self insetY], [self insetX]);
+//        self.itemSize = CGSizeMake([self itemWidth], [self itemHeight]);
     }
 }
 
@@ -56,9 +66,9 @@ static float CardHeightScale = 0.59f;
             if (fabs(progress) > 1) {continue;}
             //根据余弦函数，弧度在 -π/4 到 π/4,即 scale在 √2/2~1~√2/2 间变化
             CGFloat scale = fabs(1 - progress);
-            
+            CGFloat myScale = _cardWidthScale + scale * (1.0 - _cardWidthScale);
             //缩放大小
-            attributes.transform = CGAffineTransformMakeScale(scale, scale);
+            attributes.transform = CGAffineTransformMakeScale(myScale, myScale);
         }
     }
     return attributesArr;
@@ -101,11 +111,13 @@ static float CardHeightScale = 0.59f;
 #pragma mark 配置方法
 //卡片宽度
 - (CGFloat)itemWidth {
-    return self.collectionView.bounds.size.width * CardWidthScale;
+//    return self.collectionView.bounds.size.width * _cardWidthScale;
+    return self.itemSize.width;
 }
 
 - (CGFloat)itemHeight {
-    return self.collectionView.bounds.size.height * CardHeightScale;
+//    return self.collectionView.bounds.size.height * _cardHeightScale;
+    return self.itemSize.height;
 }
 
 //设置左右缩进

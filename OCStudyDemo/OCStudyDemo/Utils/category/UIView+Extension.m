@@ -11,6 +11,107 @@
 
 @implementation UIView (Extension)
 
+- (CGFloat)top
+{
+    return CGRectGetMinY(self.frame);
+}
+
+- (void)setTop:(CGFloat)top {
+    CGRect rect = self.frame;
+    rect.origin.y = top;
+    self.frame = rect;
+}
+
+- (CGFloat)left
+{
+    return CGRectGetMinX(self.frame);
+}
+
+- (void)setLeft:(CGFloat)left {
+    CGRect rect = self.frame;
+    rect.origin.x = left;
+    self.frame = rect;
+}
+
+- (CGFloat)right
+{
+    return CGRectGetMaxX(self.frame);
+}
+
+- (void)setRight:(CGFloat)right {
+    CGRect rect = self.frame;
+    rect.origin.x = right - self.width;
+    self.frame = rect;
+}
+
+- (CGFloat)bottom
+{
+    return CGRectGetMaxY(self.frame);
+}
+
+- (void)setBottom:(CGFloat)bottom {
+    CGRect rect = self.frame;
+    rect.origin.y = bottom - self.height;
+    self.frame = rect;
+}
+
+- (CGFloat)width
+{
+    return CGRectGetWidth(self.frame);
+}
+
+- (void)setWidth:(CGFloat)width
+{
+    CGRect rect = self.frame;
+    rect.size.width = width;
+    self.frame = rect;
+}
+
+- (CGFloat)height
+{
+    return CGRectGetHeight(self.frame);
+}
+
+- (void)setHeight:(CGFloat)height;
+{
+    CGRect rect = self.frame;
+    rect.size.height = height;
+    self.frame = rect;
+}
+
+- (CGFloat)centerX
+{
+    return CGRectGetMidX(self.frame);
+}
+
+- (void)setCenterX:(CGFloat)dyn_centerX {
+    CGRect rect = self.frame;
+    rect.origin.x = dyn_centerX - self.width / 2.0;
+    self.frame = rect;
+}
+
+- (CGFloat)centerY
+{
+    return CGRectGetMidY(self.frame);
+}
+
+- (void)setCenterY:(CGFloat)dyn_centerY {
+    CGRect rect = self.frame;
+    rect.origin.y = dyn_centerY - self.height / 2.0;
+    self.frame = rect;
+}
+
+- (CGSize)size {
+    return self.frame.size;
+}
+
+- (void)setSize:(CGSize)dyn_size {
+    CGRect rect = self.frame;
+    rect.size = dyn_size;
+    self.frame = rect;
+}
+
+
 - (CGFloat)maxX
 {
     return CGRectGetMaxX(self.frame);
@@ -61,30 +162,6 @@
 {
     CGRect rect = self.frame;
     rect.origin.y = y;
-    self.frame = rect;
-}
-
-- (CGFloat)height
-{
-    return CGRectGetHeight(self.frame);
-}
-
-- (CGFloat)width
-{
-    return CGRectGetWidth(self.frame);
-}
-
-- (void)setWidth:(CGFloat)width
-{
-    CGRect rect = self.frame;
-    rect.size.width = width;
-    self.frame = rect;
-}
-
-- (void)setHeight:(CGFloat)height;
-{
-    CGRect rect = self.frame;
-    rect.size.height = height;
     self.frame = rect;
 }
 

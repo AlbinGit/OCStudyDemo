@@ -7,21 +7,25 @@
 //
 
 #import "LYBCarouselView.h"
-#import "LYBTimerClass.h"
+#import "LYBPageControl.h"
+#import "NSTimer+LYBCategory.h"
 
-@interface LYBCarouselView() <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, LYBTimerClassDelegate>
+@interface LYBCarouselView() <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) NSInteger num;
-@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, assign) NSInteger currentIndex;//实际下标
 @property (nonatomic, assign) CGFloat itemWidth;
 @property (nonatomic, assign) CGFloat midSpace;
 @property (nonatomic, assign) CGFloat leftSpace;
 @property (nonatomic, assign) CGFloat rightSpace;
 @property (nonatomic, assign) CGFloat oneCarouselWidth;
-@property (nonatomic,strong) LYBTimerClass *timerClass;
 
 @property (nonatomic, assign) NSInteger carouselNum;
+@property (nonatomic,strong) NSTimer *animationTimer;
+@property (nonatomic, assign) NSInteger virtualIndex;//虚拟下标
+
+@property (nonatomic,strong) LYBPageControl *pageControl;
 
 @end
 
@@ -34,13 +38,27 @@
         _style = _flowLayout.style;
         self.delegate = delegate;
         self.datasource = datasource;
-        self.isAuto = NO;
-        self.autoTimInterval = 3;
         self.loop = YES;
         _carouselNum = 1000;
+        _pageControlNormalLocalImage = @"dyn_pageindicator_short";
+        _pageControlHighlightedLocalImage = @"dyn_pageindicator_long";
+        _pageSpace = 4;
+        _pageBottom = 7;
+        _pageHeight = 7;
         [self addSubview:self.collectionView];
+//        [_collectionView dyn_configureLayoutWithBlock:^(dyn_YGLayout * _Nonnull layout) {
+//            layout.isEnabled = YES;
+//            layout.flexGrow = 1;
+//        }];
+
+        [self scrollToFirstItem];
     }
     return self;
+}
+
+- (void)updateFrame:(CGRect)frame {
+    self.frame = frame;
+    _collectionView.frame = self.bounds;
 }
 
 - (UICollectionView *)collectionView {
@@ -60,11 +78,6 @@
 
 - (void)registerViewClass:(Class)viewClass identifier:(NSString *)identifier {
     [self.collectionView registerClass:viewClass forCellWithReuseIdentifier:identifier];
-}
-
-- (void)registerNibView:(NSString *)nibName identifier:(NSString *)identifier {
-    [self.collectionView registerNib:[UINib nibWithNibName:nibName bundle:[NSBundle mainBundle]]
-        forCellWithReuseIdentifier:identifier];
 }
 
 #pragma mark - collectionVIew DataSource
@@ -88,6 +101,10 @@
     {
         NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:indexPath.row % _num inSection:0];
         UICollectionViewCell *cell = [self.datasource carouselCollectionView:collectionView cellForItemAtIndexPath:newIndexPath];
+        if (_itemCornerRadius > 0) {
+            cell.contentView.layer.masksToBounds = YES;
+            cell.contentView.layer.cornerRadius = _itemCornerRadius;
+        }
         return cell;
     }
     return nil;
@@ -132,113 +149,121 @@
 
 - (void)reloadView {
     [self.collectionView reloadData];
+    [self scrollToFirstItem];
 }
 
 
 #pragma mark -- 无限轮播
-- (void)layoutSubviews {
-    [self scrollToFirstItem];
+
+- (void)setAnimationDuration:(NSTimeInterval)animationDuration {
+    if (animationDuration > 0.0 && !_animationTimer) {
+        _animationTimer = [NSTimer scheduledTimerWithTimeInterval:(_animationDuration = animationDuration)
+                                                           target:self
+                                                         selector:@selector(animationTimerDidFired:)
+                                                         userInfo:nil
+                                                          repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:_animationTimer forMode:NSRunLoopCommonModes];
+    }
+}
+
+- (void)setIsShowPageControl:(BOOL)isShowPageControl {
+    _isShowPageControl = isShowPageControl;
     if (_isShowPageControl) {
+        self.pageControl.numberOfPages = _num;
         [self addSubview:self.pageControl];
+        _pageControl.frame = CGRectMake(self.height - self.pageHeight - self.pageBottom, (self.width - _pageControl.size.width) / 2.0, _pageControl.size.width, self.pageHeight);
+//        [_pageControl dyn_configureLayoutWithBlock:^(dyn_YGLayout * _Nonnull layout) {
+//            layout.isEnabled = YES;
+//            layout.position = dyn_YGPositionTypeAbsolute;
+//            layout.alignSelf = dyn_YGAlignCenter;
+//            layout.bottom = dyn_YGPointValue(self.pageBottom);
+//            layout.height = dyn_YGPointValue(self.pageHeight);
+//        }];
     }
 }
 
 - (void)scrollToFirstItem {
+    self.currentIndex = 0;
     [_collectionView layoutIfNeeded];
     dispatch_async(dispatch_get_main_queue(),^{
         //刷新完成，其他操作
         //默认滚动到第一张图片
         if (self.loop)
         {
-            _oneCarouselWidth = _itemWidth * _num + _midSpace * (_num - 1);
-            if (_style == LYBCarouselStyle_Normal) {
-                [_collectionView setContentOffset:CGPointMake(_leftSpace + _oneCarouselWidth * (_carouselNum / 2.0) + _midSpace * ((_carouselNum / 2.0) - 1.0), 0)];
+            self.currentIndex = _num * (_carouselNum / 2.0);
+            _oneCarouselWidth = (_itemWidth + _midSpace) * _num;
+            if (_style == LYBCarouselStyle_normal) {
+                [_collectionView setContentOffset:CGPointMake(self.currentIndex * (_itemWidth + _midSpace), 0)];
             } else {
-                [_collectionView setContentOffset:CGPointMake( 2 * _leftSpace - ((self.collectionView.frame.size.width - _flowLayout.itemSize.width) / 2.0)  + _oneCarouselWidth * (_carouselNum / 2.0) + _midSpace * ((_carouselNum / 2.0) - 1.0), 0)];
+                [_collectionView setContentOffset:CGPointMake(self.currentIndex * (_itemWidth + _midSpace) + _leftSpace - ((self.collectionView.frame.size.width - _flowLayout.itemSize.width) / 2.0), 0)];
             }
-            self.currentIndex = 0;
+            
         }
     });
     
 }
 
 #pragma mark - < Scroll Delegate >
-/// 开始拖拽
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [_timerClass stopPolling];
-}
-
-
-/// 将要结束拖拽
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    [_timerClass startPolling];
-}
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     if (self.loop)
     {
         CGFloat rightBounds = _leftSpace + _oneCarouselWidth * (_carouselNum - 3) + self.frame.size.width;
         if (scrollView.contentOffset.x <= _oneCarouselWidth * 3 - self.frame.size.width) {
-            self.currentIndex = _num;
             [_collectionView setContentOffset:CGPointMake(_oneCarouselWidth * (_carouselNum / 2) - self.frame.size.width, 0)];
-            NSLog(@"222");
             return;
         } else if (scrollView.contentOffset.x >= rightBounds) {
-            self.currentIndex = 0;
             [_collectionView setContentOffset:CGPointMake(_leftSpace + _oneCarouselWidth * (_carouselNum / 2) + self.frame.size.width, 0)];
-            NSLog(@"111");
             return;
         }
     }
-    CGFloat contentX = scrollView.contentOffset.x - (_leftSpace + _oneCarouselWidth * (_carouselNum / 2));
+    CGFloat contentX = 0;
+    if (_style == LYBCarouselStyle_normal) {
+        contentX = scrollView.contentOffset.x + _leftSpace;
+    } else {
+        contentX = scrollView.contentOffset.x + ((self.collectionView.frame.size.width - _flowLayout.itemSize.width) / 2.0) + _leftSpace;
+    }
     NSInteger index = roundf(contentX / (_itemWidth + _midSpace));
     self.currentIndex = index;
-    _pageControl.currentPage = labs(index % _num);
-    NSLog(@"index--->%ld",index);
-    if (_delegate && [_delegate respondsToSelector:@selector(carouselView:scrollViewToIndex:)]) {
-        if (_style == LYBCarouselStyle_Normal) {
-            [_delegate carouselView:self scrollViewToIndex:labs(index % _num)];
-        } else {
-            [_delegate carouselView:self scrollViewToIndex:labs((index + 1) % _num)];
+    self.virtualIndex = labs(index % _num);
+    _pageControl.currentPage = _virtualIndex;
+    
+}
+
+- (void)setVirtualIndex:(NSInteger)virtualIndex {
+    if (_virtualIndex != virtualIndex) {
+        _virtualIndex = virtualIndex;
+        if (_delegate && [_delegate respondsToSelector:@selector(carouselView:collectionView:scrollViewToIndex:)]) {
+            [_delegate carouselView:self collectionView:_collectionView scrollViewToIndex:_virtualIndex];
         }
     }
 }
 
-- (UIPageControl *)pageControl {
-    if(!_pageControl) {
-        self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width - 20, 30)];
-        CGPoint center = self.center;
-        center.y = CGRectGetHeight(self.frame) - 30 * 0.5;
-        _pageControl.pageIndicatorTintColor = [UIColor blackColor];
-        _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
-        _pageControl.userInteractionEnabled = NO;
-        [_pageControl addTarget:self action:@selector(pageControlClick:) forControlEvents:UIControlEventTouchUpInside];
-        _pageControl.center = center;
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (_delegate && [_delegate respondsToSelector:@selector(cv_collectionView:willDisplayCell:forItemAtIndexPath:)]) {
+        NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:indexPath.row % _num inSection:0];
+        [_delegate cv_collectionView:collectionView willDisplayCell:cell forItemAtIndexPath:newIndexPath];
+    }
+}
+
+#pragma pageControl
+
+- (LYBPageControl *)pageControl {
+    if (!_pageControl) {
+        //页面控制
+        _pageControl = [[LYBPageControl alloc]init];
+        _pageControl.imagePageStateHighlighted = [UIImage imageNamed:_pageControlHighlightedLocalImage];
+        _pageControl.imagePageStateNormal = [UIImage imageNamed:_pageControlNormalLocalImage];
+        _pageControl.pageSpace = _pageSpace;
     }
     return _pageControl;
 }
-
-#pragma mark - Setter
-- (void)setCustomPageControl:(UIView<LYBCarouselPageControlProtocol> *)customPageControl {
-    _customPageControl = customPageControl;
-    if(_customPageControl && _customPageControl.superview == nil)
-    {
-        [self addSubview:_customPageControl];
-        [self bringSubviewToFront:_customPageControl];
-        if(self.pageControl.superview == _customPageControl.superview)
-        {
-            [self.pageControl removeFromSuperview];
-        }
-    }
-}
-
 
 - (void)pageControlClick:(UIPageControl *)sender {
     if (![sender isKindOfClass:[UIPageControl class]]) {
         return;
     }
-   
+    
     NSInteger page = sender.currentPage;
     
     self.currentIndex = page;
@@ -246,28 +271,51 @@
 }
 
 - (void)scrollToItemIndex:(NSInteger)index {
-    if (_style == LYBCarouselStyle_Normal) {
-    [_collectionView setContentOffset:CGPointMake(_leftSpace + _oneCarouselWidth * (_carouselNum / 2.0) + _midSpace * ((_carouselNum / 2.0) - 1.0) + index * (_itemWidth + _midSpace), 0) animated:YES];
+    if (_style == LYBCarouselStyle_normal) {
+        [_collectionView setContentOffset:CGPointMake(index * (_itemWidth + _midSpace), 0) animated:YES];
     } else {
-//        [_collectionView setContentOffset:CGPointMake( 2 * _leftSpace - ((self.collectionView.frame.size.width - _flowLayout.itemSize.width) / 2.0)  + _oneCarouselWidth * (_carouselNum / 2.0) + _midSpace * ((_carouselNum / 2.0) - 1.0)  + index * (_itemWidth + _midSpace), 0) animated:YES];
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(_carouselNum / 2.0) * _num + index inSection:0];
-        [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        [_collectionView setContentOffset:CGPointMake(index * (_itemWidth + _midSpace) + _leftSpace - ((self.collectionView.frame.size.width - _flowLayout.itemSize.width) / 2.0), 0) animated:YES];
     }
 }
 
-- (void)setIsAuto:(BOOL)isAuto {
-    _isAuto = isAuto;
-    if (_isAuto) {
-        _timerClass = [[LYBTimerClass alloc]init];
-        _timerClass.autoTimInterval = _autoTimInterval;
-        _timerClass.delegate = self;
-        [_timerClass startPolling];
+
+#pragma mark -- Timer
+- (void)willMoveToSuperview:(UIView *)newSuperview
+{
+    if (newSuperview == nil) {
+        if (_animationTimer) {
+            [_animationTimer invalidate];
+            _animationTimer = nil;
+        }
     }
 }
 
-- (void)doSomeThing {
-    self.currentIndex = (self.currentIndex + 1);
-    [self scrollToItemIndex:self.currentIndex];
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [_animationTimer pauseTimer];
+    if ([_delegate respondsToSelector:@selector(carouselView:scrollViewWillBeginDragging:)]) {
+        [_delegate carouselView:self scrollViewWillBeginDragging:scrollView];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [_animationTimer resumeTimerAfterTimeInterval:_animationDuration];
+}
+
+- (void)animationTimerDidFired:(NSTimer *)timer
+{
+    if (_num>0) {
+        self.currentIndex = (self.currentIndex + 1);
+        [self scrollToItemIndex:self.currentIndex];
+    }
+}
+
+- (void)pauseScroll;
+{
+    [_animationTimer pauseTimer];
+}
+
+- (void)resumeScrollAfterTimeInterval:(NSTimeInterval)interval{
+    [_animationTimer resumeTimerAfterTimeInterval:interval];
 }
 
 - (void)dealloc {

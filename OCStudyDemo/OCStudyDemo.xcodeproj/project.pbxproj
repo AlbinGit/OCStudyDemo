@@ -27,6 +27,8 @@
 		AA89B65F25F7A38200235CFD /* LYBBorderRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA89B65E25F7A38200235CFD /* LYBBorderRadiusViewController.m */; };
 		AA89B66525F7A5A200235CFD /* LYBCornerRadiusUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AA89B66425F7A5A200235CFD /* LYBCornerRadiusUtil.m */; };
 		AAA2598A25D376F000FAC814 /* DYNTouchDownGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA2598825D376F000FAC814 /* DYNTouchDownGestureRecognizer.m */; };
+		AAB0F005268C0E76007CA33B /* LYBPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F004268C0E76007CA33B /* LYBPageControl.m */; };
+		AAB0F008268C14B2007CA33B /* NSTimer+LYBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F007268C14B2007CA33B /* NSTimer+LYBCategory.m */; };
 		AACE5447240910D00081A1CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE5446240910D00081A1CD /* UIView+Extension.m */; };
 		AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */; };
 		AAE282F023FE80B3002CB6AF /* LYBCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282EF23FE80B3002CB6AF /* LYBCarouselViewController.m */; };
@@ -137,6 +139,10 @@
 		AA89B66425F7A5A200235CFD /* LYBCornerRadiusUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBCornerRadiusUtil.m; sourceTree = "<group>"; };
 		AAA2598825D376F000FAC814 /* DYNTouchDownGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNTouchDownGestureRecognizer.m; sourceTree = "<group>"; };
 		AAA2598925D376F000FAC814 /* DYNTouchDownGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNTouchDownGestureRecognizer.h; sourceTree = "<group>"; };
+		AAB0F003268C0E76007CA33B /* LYBPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBPageControl.h; sourceTree = "<group>"; };
+		AAB0F004268C0E76007CA33B /* LYBPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBPageControl.m; sourceTree = "<group>"; };
+		AAB0F006268C14B2007CA33B /* NSTimer+LYBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+LYBCategory.h"; sourceTree = "<group>"; };
+		AAB0F007268C14B2007CA33B /* NSTimer+LYBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+LYBCategory.m"; sourceTree = "<group>"; };
 		AACE5445240910D00081A1CD /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		AACE5446240910D00081A1CD /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		AACF0425233DAC1400CBDD6F /* LYBAttributeStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBAttributeStringViewController.h; sourceTree = "<group>"; };
@@ -371,6 +377,8 @@
 				AAE282F323FE8820002CB6AF /* LYBCarouselView.m */,
 				AAE282F523FE8850002CB6AF /* LYBCarouselFlowLayout.h */,
 				AAE282F623FE8850002CB6AF /* LYBCarouselFlowLayout.m */,
+				AAB0F003268C0E76007CA33B /* LYBPageControl.h */,
+				AAB0F004268C0E76007CA33B /* LYBPageControl.m */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -456,6 +464,8 @@
 				B14FF2D6207C5888006CD5ED /* UIView+Animation.m */,
 				AACE5445240910D00081A1CD /* UIView+Extension.h */,
 				AACE5446240910D00081A1CD /* UIView+Extension.m */,
+				AAB0F006268C14B2007CA33B /* NSTimer+LYBCategory.h */,
+				AAB0F007268C14B2007CA33B /* NSTimer+LYBCategory.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -944,6 +954,7 @@
 				B1F0302C204D1DB90085493A /* LYBPerson2.m in Sources */,
 				B1D2DB592044FAE000DEE835 /* LYBCircelCollectionViewController.m in Sources */,
 				AACE5447240910D00081A1CD /* UIView+Extension.m in Sources */,
+				AAB0F008268C14B2007CA33B /* NSTimer+LYBCategory.m in Sources */,
 				AAED811823B0D44E00192C37 /* LYBFlutterViewController.m in Sources */,
 				B12516E2206C787900D3A758 /* LYBBlockViewController.m in Sources */,
 				B1D5780C20808F0400FAEE96 /* LYBThreadViewController.m in Sources */,
@@ -957,6 +968,7 @@
 				B12D2AD02074649E001999E3 /* LYBRadarView.m in Sources */,
 				AAED811523B0CE8F00192C37 /* LYBFlutterNativePlugin.m in Sources */,
 				B12516E5206C78AF00D3A758 /* LYBBlockView.m in Sources */,
+				AAB0F005268C0E76007CA33B /* LYBPageControl.m in Sources */,
 				AA84B7692372D676005782DE /* LZThreadFreezeMonitor.m in Sources */,
 				AA89B66525F7A5A200235CFD /* LYBCornerRadiusUtil.m in Sources */,
 				B1721763207AFD970024B212 /* NSTimer+LYBBlockSupport.m in Sources */,

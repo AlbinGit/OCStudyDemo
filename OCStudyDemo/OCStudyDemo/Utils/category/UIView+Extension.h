@@ -21,6 +21,17 @@ typedef struct {
 
 @interface UIView (Extension)
 
+
+@property(nonatomic) CGFloat top;
+@property(nonatomic) CGFloat left;
+@property(nonatomic) CGFloat right;
+@property(nonatomic) CGFloat bottom;
+@property(nonatomic) CGFloat height;
+@property(nonatomic) CGFloat width;
+@property(nonatomic) CGFloat centerX;
+@property(nonatomic) CGFloat centerY;
+@property(nonatomic) CGSize size;
+
 - (CGFloat)maxX;
 - (CGFloat)maxY;
 - (CGFloat)minX;
@@ -32,11 +43,6 @@ typedef struct {
 - (CGFloat)Y;
 - (void)setX:(CGFloat)x;
 - (void)setY:(CGFloat)y;
-
-- (CGFloat)height;
-- (CGFloat)width;
-- (void)setWidth:(CGFloat)width;
-- (void)setHeight:(CGFloat)height;
 
 - (void)setFrameCenterWithSuperView:(UIView *)superView size:(CGSize)size;
 - (void)setFrameInBottomCenterWithSuperView:(UIView *)superView size:(CGSize)size;

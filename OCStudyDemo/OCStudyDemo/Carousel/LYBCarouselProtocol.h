@@ -22,7 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)carouselView:(LYBCarouselView *)carouselView didSelectedAtIndex:(NSInteger)index;
 
 
-- (void)carouselView:(LYBCarouselView *)carouselView scrollViewToIndex:(NSInteger)index;
+- (void)carouselView:(LYBCarouselView *)carouselView collectionView:(UICollectionView *)collectionView scrollViewToIndex:(NSInteger)index;
+
+- (void)carouselView:(LYBCarouselView *)carouselView scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+
+- (void)cv_collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

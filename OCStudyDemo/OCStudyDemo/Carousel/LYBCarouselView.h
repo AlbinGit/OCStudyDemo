@@ -35,32 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign, readonly) LYBCarouselStyle style;
 
-/**
- 是否自动轮播, 默认为NO
- */
-@property (nonatomic, assign) BOOL isAuto;
-
-/**
- 自动轮播时间间隔, 默认 3s
- */
-@property (nonatomic, assign) NSTimeInterval autoTimInterval;
-
+//轮播时长
+@property (nonatomic,assign) NSTimeInterval animationDuration;
 
 @property (nonatomic, assign) BOOL isShowPageControl;
-
-/**
- 默认的pageControl
- 1. 默认在水平居中正下方
- 2. 位置可以自己根据frame自行调整
- 3. 如果不想将其添加在carousel上,请自行通过调用目标父视图的addSubview方法添加到其他父视图上
- */
-@property (nonatomic, strong) UIPageControl *pageControl;
-
-
-/**
- 自定义的pageControl
- */
-@property (nonatomic, strong) UIView<LYBCarouselPageControlProtocol> *customPageControl;
+@property (nonatomic,copy) NSString *pageControlNormalLocalImage;//轮播指示器默认图片
+@property (nonatomic,copy) NSString *pageControlHighlightedLocalImage;//轮播指示器选中图片
+@property (nonatomic, assign) CGFloat pageSpace;//轮播指示器间距
+@property (nonatomic, assign) CGFloat pageBottom;//轮播指示器底部距离
+@property (nonatomic, assign) CGFloat pageHeight;//轮播指示器高度
+@property (nonatomic,assign) CGFloat itemCornerRadius;//item圆角
 
 /**
  是否开始无限轮播
@@ -84,6 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
                         datasource:(id<LYBCarouselDatasource> _Nullable)datasource
                        flowLayout:(nonnull LYBCarouselFlowLayout *)flowLayout;
 
+- (void)updateFrame:(CGRect)frame;
 /**
  注册自定视图
 
@@ -93,18 +78,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registerViewClass:(Class _Nullable )viewClass identifier:(NSString *_Nullable)identifier;
 
 /**
- 注册自定义视图
-
- @param nibName 自定义视图xib相关文件名
- @param identifier 重用唯一标识符
- */
-- (void)registerNibView:(NSString *_Nullable)nibName identifier:(NSString *_Nullable)identifier;
-
-
-/**
  刷新轮播图
  */
 - (void)reloadView;
+
+//停止定时器
+- (void)pauseScroll;
+
+//继续定时器
+- (void)resumeScrollAfterTimeInterval:(NSTimeInterval)interval;
 
 
 @end

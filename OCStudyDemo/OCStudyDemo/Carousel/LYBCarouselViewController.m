@@ -29,8 +29,8 @@
 - (void)configUI {
     self.backgroundColor = [UIColor clearColor];
     
-    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(-10 * WIDTH_BASE, 0, self.contentView.width + 20 * WIDTH_BASE, self.contentView.height)];
-    _imgView.layer.cornerRadius = 3;
+    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.width, self.contentView.height)];
+    _imgView.layer.cornerRadius = 0;
     _imgView.layer.masksToBounds = YES;
     [self.contentView addSubview:_imgView];
     
@@ -72,12 +72,11 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    LYBCarouselFlowLayout *flowLayout = [[LYBCarouselFlowLayout alloc] initWithStyle:LYBCarouselStyle_Normal];
+    LYBCarouselFlowLayout *flowLayout = [[LYBCarouselFlowLayout alloc] initWithStyle:LYBCarouselStyle_normal];
     _carouselView = [[LYBCarouselView alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 200 * WIDTH_BASE) delegate:self datasource:self flowLayout:flowLayout];
-    [_carouselView registerViewClass:[LYBCarouselViewCell class] identifier:@"cell"];
-    _carouselView.backgroundColor = [UIColor orangeColor];
+    _carouselView.animationDuration = 3.0;
     _carouselView.isShowPageControl = YES;
-    _carouselView.isAuto = YES;
+    [_carouselView registerViewClass:[LYBCarouselViewCell class] identifier:@"cell"];
     [self.view addSubview:_carouselView];
     
     [self requestNetworkData];
@@ -125,8 +124,8 @@
     return 10;
 }
 
-- (UIEdgeInsets)carouselViewEdgeInsets {
-    return UIEdgeInsetsMake(0, 0, 0, 0);
-}
+//- (UIEdgeInsets)carouselViewEdgeInsets {
+//    return UIEdgeInsetsMake(0, 0, 0, 0);
+//}
 
 @end
