@@ -35,15 +35,53 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initData];
-    [self.view addSubview:self.collectionView];
-
-    CGFloat allItemAngle = _angleOfEachItem*_dataArray.count;
-    CGFloat l = allItemAngle*_radius;
-    CGFloat angle = (M_PI-_angleOfEachItem)/4;
-    CGFloat l1 = angle*_radius;
+//    [self initData];
+//    [self.view addSubview:self.collectionView];
+//
+//    CGFloat allItemAngle = _angleOfEachItem*_dataArray.count;
+//    CGFloat l = allItemAngle*_radius;
+//    CGFloat angle = (M_PI-_angleOfEachItem)/4;
+//    CGFloat l1 = angle*_radius;
+//
+//    [self.collectionView setContentOffset:CGPointMake(100*l-l1, 0)];
     
-    [self.collectionView setContentOffset:CGPointMake(100*l-l1, 0)];
+    [self configUI];
+}
+
+- (void)configUI {
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+//    flowLayout.itemSize = CGSizeMake(100, 100);
+    flowLayout.minimumInteritemSpacing = 100;
+//    flowLayout.minimumLineSpacing = 100;
+    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 100, CN_SCREEN_WIDTH, 100) collectionViewLayout:flowLayout];
+    _collectionView.backgroundColor = [UIColor yellowColor];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.showsVerticalScrollIndicator = NO;
+    _collectionView.showsHorizontalScrollIndicator = NO;
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    _collectionView.contentInset = UIEdgeInsetsMake(0, 20, 0, 20);
+    [self.view addSubview:_collectionView];
+    
+    _dataArray = [NSMutableArray array];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(100, 100)]];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(200, 100)]];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(300, 100)]];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(50, 10)]];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(20, 10)]];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(30, 10)]];
+    [_dataArray addObject:[NSValue valueWithCGSize:CGSizeMake(40, 100)]];
+    [_collectionView reloadData];
+}
+
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+//    return 10;
+//}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSValue *value = _dataArray[indexPath.row];
+    return [value CGSizeValue];
 }
 
 - (void)initData{
@@ -93,16 +131,23 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _dataArray.count*1000;
+//    return _dataArray.count*1000;
+    return _dataArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CNCilrcleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+//    CNCilrcleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+//    if (cell) {
+//        LYBCellModel *model = _dataArray[indexPath.item%_dataArray.count];
+//        cell.backgroundColor = [UIColor orangeColor];
+//        [cell loadView:model];
+//    }
+//    return cell;
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     if (cell) {
-        LYBCellModel *model = _dataArray[indexPath.item%_dataArray.count];
         cell.backgroundColor = [UIColor orangeColor];
-        [cell loadView:model];
     }
     return cell;
 }
@@ -115,24 +160,24 @@
 
 
 
-- (CGPoint)nearestTargetOffsetForOffset:(CGPoint)offset
-{
-    CGFloat pageSize = (_angleOfEachItem*_radius)/2;
-    NSInteger page = roundf(offset.x / pageSize);
-    CGFloat targetX = pageSize * page;
-    return CGPointMake(targetX, offset.y);
-}
-
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
-{
-    CGPoint targetOffset = [self nearestTargetOffsetForOffset:*targetContentOffset];
-    targetContentOffset->x = targetOffset.x+(5*_angleOfEachItem-M_PI)/4*_radius;
-    targetContentOffset->y = targetOffset.y;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    NSLog(@"scrollView.x:%f",scrollView.contentOffset.x);
-}
+//- (CGPoint)nearestTargetOffsetForOffset:(CGPoint)offset
+//{
+//    CGFloat pageSize = (_angleOfEachItem*_radius)/2;
+//    NSInteger page = roundf(offset.x / pageSize);
+//    CGFloat targetX = pageSize * page;
+//    return CGPointMake(targetX, offset.y);
+//}
+//
+//- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+//{
+//    CGPoint targetOffset = [self nearestTargetOffsetForOffset:*targetContentOffset];
+//    targetContentOffset->x = targetOffset.x+(5*_angleOfEachItem-M_PI)/4*_radius;
+//    targetContentOffset->y = targetOffset.y;
+//}
+//
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    NSLog(@"scrollView.x:%f",scrollView.contentOffset.x);
+//}
 
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,18 @@
+push graphic-context
+encoding "UTF-8"
+viewbox 0 0 40 40
+affine 1 0 0 1 0 0
+push graphic-context
+stroke 'none'
+stroke-width 1
+fill 'none'
+fill-rule 'evenodd'
+push graphic-context
+stroke '#0000FF'
+stroke-width 2
+push graphic-context
+roundRectangle 1,1 39,39 12,12
+pop graphic-context
+pop graphic-context
+pop graphic-context
+pop graphic-context

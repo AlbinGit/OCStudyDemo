@@ -33,10 +33,11 @@ struct {
 
 - (void)startPolling{
     __weak LYBTimerClass *weakSelf = self;
-    _pollingTimer = [NSTimer lyb_scheduledTimerWithTimeInterval:1 repeats:YES block:^{
+    _pollingTimer = [NSTimer lyb_scheduledTimerWithTimeInterval:_autoTimInterval repeats:YES block:^{
         LYBTimerClass *strongSelf = weakSelf;
         [strongSelf p_doPoll];
     }];
+    [[NSRunLoop currentRunLoop] addTimer:_pollingTimer forMode:NSDefaultRunLoopMode];
 }
 
 - (void)startPolling1{
@@ -52,7 +53,6 @@ struct {
 - (void)p_doPoll{
     static int i = 0;
     i++;
-    NSLog(@"i--->%d",i);
     if (_delegateFlags.isRespondSomeThing) {
         [_delegate doSomeThing];
     }

@@ -25,7 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self test3];
+//    [self test3];
+    [self transitionUI];
 }
 
 - (IBAction)btnAction:(id)sender {

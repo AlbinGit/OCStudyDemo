@@ -17,7 +17,7 @@
 @interface LYBTimerClass : NSObject
 
 @property (nonatomic ,weak) id<LYBTimerClassDelegate> delegate;
-
+@property (nonatomic ,assign) NSTimeInterval autoTimInterval;//定时器间隔
 
 - (void)startPolling;
 - (void)startPolling1;

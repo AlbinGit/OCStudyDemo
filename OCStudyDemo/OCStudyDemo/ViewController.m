@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import <Flutter/Flutter.h>
+#import "LYBFlutterViewController.h"
 
 @interface ViewController ()
 
-@property (nonatomic ,strong) NSArray *dataArray;
+@property (nonatomic, strong) NSArray *dataArray;
+//@property (nonatomic, strong) LYBFlutterViewController *flutterVC;
 
 @end
 
@@ -19,6 +20,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    NSLog(@"------>viewWillAppear");
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -106,11 +108,24 @@
                      @"type":@"Normal",
                      },
                    @{@"title":@"Flutter",
-                     @"class":@"FlutterViewController",
+                     @"class":@"LYBFlutterViewController",
+                     @"type":@"Flutter",
+                   },
+                   @{@"title":@"Carousel",
+                     @"class":@"LYBCarouselViewController",
                      @"type":@"Normal",
                    },
+                   @{@"title":@"SVG",
+                     @"class":@"LYBSVGViewController",
+                     @"type":@"Normal",
+                   },
+                   @{@"title":@"BorderRadius",
+                     @"class":@"LYBBorderRadiusViewController",
+                     @"type":@"Normal",
+                   },
+                   
                    ];
-    
+//    _flutterVC = [[LYBFlutterViewController alloc] init];
 }
 
 
@@ -137,7 +152,9 @@
     if ([type isEqualToString:@"StoryBoard"]) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         vc = [storyboard instantiateViewControllerWithIdentifier:className];
-    }else{
+    } else if ([type isEqualToString:@"Flutter"]) {
+//        vc = _flutterVC;
+    } else{
         vc = [[NSClassFromString(className) alloc]init];
     }
     vc.title = _dataArray[indexPath.row][@"title"];

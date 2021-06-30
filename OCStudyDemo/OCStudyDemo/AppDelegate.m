@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+//#import <FlutterPluginRegistrant/FlutterPluginRegistrant-umbrella.h>
+//#import "LYBFlutterNativePlugin.h"
 @interface AppDelegate ()
 
 @end
@@ -23,16 +25,9 @@
     ViewController *vc = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
+
     [self.window makeKeyAndVisible];
     return YES;
-    
-//    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
-//    
-//    [self.flutterEngine runWithEntrypoint:nil];
-//    
-//    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
-//    
-//    return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 
