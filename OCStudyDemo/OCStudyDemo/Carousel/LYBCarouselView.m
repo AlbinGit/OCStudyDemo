@@ -39,7 +39,7 @@
         self.delegate = delegate;
         self.datasource = datasource;
         self.loop = YES;
-        _carouselNum = 1000;
+        _carouselNum = 10;
         _pageControlNormalLocalImage = @"dyn_pageindicator_short";
         _pageControlHighlightedLocalImage = @"dyn_pageindicator_long";
         _pageSpace = 4;
@@ -208,12 +208,12 @@
 {
     if (self.loop)
     {
-        CGFloat rightBounds = _leftSpace + _oneCarouselWidth * (_carouselNum - 3) + self.frame.size.width;
-        if (scrollView.contentOffset.x <= _oneCarouselWidth * 3 - self.frame.size.width) {
-            [_collectionView setContentOffset:CGPointMake(_oneCarouselWidth * (_carouselNum / 2) - self.frame.size.width, 0)];
+        CGFloat rightBounds = _leftSpace + _oneCarouselWidth * (_carouselNum - 3);
+        if (scrollView.contentOffset.x <= _oneCarouselWidth * 3) {
+            [_collectionView setContentOffset:CGPointMake(_oneCarouselWidth * (_carouselNum / 2), 0)];
             return;
         } else if (scrollView.contentOffset.x >= rightBounds) {
-            [_collectionView setContentOffset:CGPointMake(_leftSpace + _oneCarouselWidth * (_carouselNum / 2) + self.frame.size.width, 0)];
+            [_collectionView setContentOffset:CGPointMake(_leftSpace + _oneCarouselWidth * (_carouselNum / 2), 0)];
             return;
         }
     }

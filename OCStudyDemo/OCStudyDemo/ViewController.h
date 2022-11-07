@@ -10,6 +10,7 @@
 
 @interface ViewController : UITableViewController
 
+void SayHello(void);
 
 @end
 

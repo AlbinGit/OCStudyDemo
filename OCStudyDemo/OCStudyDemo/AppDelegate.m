@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "NSObject+LYBKVO.h"
+#import "NSBundle+LYBInfo.h"
 //#import <FlutterPluginRegistrant/FlutterPluginRegistrant-umbrella.h>
 //#import "LYBFlutterNativePlugin.h"
 @interface AppDelegate ()
@@ -25,8 +27,12 @@
     ViewController *vc = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
-
+//    SayHello();
     [self.window makeKeyAndVisible];
+    
+//    PrintDescription(@"test",[[NSClassFromString(@"LYBRuntimeViewController") alloc] init]);
+//    NSArray *array = [NSBundle lyb_bundleAllClassesInfo];
+    
     return YES;
 }
 

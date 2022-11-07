@@ -8,6 +8,7 @@
 
 #import "LYBCarouselViewController.h"
 #import "LYBCarouselHeader.h"
+#import "UIColor+Extension.h"
 
 @interface LYBCarouselViewCell : UICollectionViewCell
 
@@ -121,7 +122,7 @@
 }
 
 - (CGFloat)carouselViewItemMidSpace {
-    return 10;
+    return 100;
 }
 
 //- (UIEdgeInsets)carouselViewEdgeInsets {

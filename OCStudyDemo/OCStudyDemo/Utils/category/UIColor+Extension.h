@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIColor+Category.h"
 
 @interface UIColor (Extension)
 
@@ -18,5 +19,8 @@
 
 //随机获取颜色
 + (UIColor *)randomColor;
+
++ (void)a;
+- (void)a;
 
 @end

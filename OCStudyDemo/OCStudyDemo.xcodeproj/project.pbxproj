@@ -12,6 +12,7 @@
 		AA056F8423826D0F002DC2EF /* LYBHitTestAView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA056F8323826D0F002DC2EF /* LYBHitTestAView.m */; };
 		AA056F8723826D1A002DC2EF /* LYBHitTestBView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA056F8623826D1A002DC2EF /* LYBHitTestBView.m */; };
 		AA056F8A23826D28002DC2EF /* LYBHitTestCView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA056F8923826D28002DC2EF /* LYBHitTestCView.m */; };
+		AA119F32287E9A3800B0E0E6 /* LYBRepeatMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA119F31287E9A3800B0E0E6 /* LYBRepeatMethodViewController.m */; };
 		AA21A5B82351B823000CEBAB /* LYBMethodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA21A5B72351B823000CEBAB /* LYBMethodModel.m */; };
 		AA6324E8237C140100F5DEFE /* LYBKartunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6324E7237C140100F5DEFE /* LYBKartunViewController.m */; };
 		AA6324EB237E4B4E00F5DEFE /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6324E9237E4B4E00F5DEFE /* SMCallStack.m */; };
@@ -26,11 +27,24 @@
 		AA84B76A2372D676005782DE /* LZThreadBacktrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AA84B7672372D676005782DE /* LZThreadBacktrace.m */; };
 		AA89B65F25F7A38200235CFD /* LYBBorderRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA89B65E25F7A38200235CFD /* LYBBorderRadiusViewController.m */; };
 		AA89B66525F7A5A200235CFD /* LYBCornerRadiusUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AA89B66425F7A5A200235CFD /* LYBCornerRadiusUtil.m */; };
+		AA8DE10B27D0C8B900A67C61 /* NSObject+LYBRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8DE10A27D0C8B900A67C61 /* NSObject+LYBRuntime.m */; };
+		AA8DE10E27D1E76F00A67C61 /* NSBundle+LYBInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8DE10D27D1E76F00A67C61 /* NSBundle+LYBInfo.m */; };
+		AA98068628753BA000BC7FC2 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D8B7285C7C340035B11E /* UIColor+Category.m */; };
 		AAA2598A25D376F000FAC814 /* DYNTouchDownGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA2598825D376F000FAC814 /* DYNTouchDownGestureRecognizer.m */; };
 		AAB0F005268C0E76007CA33B /* LYBPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F004268C0E76007CA33B /* LYBPageControl.m */; };
 		AAB0F008268C14B2007CA33B /* NSTimer+LYBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F007268C14B2007CA33B /* NSTimer+LYBCategory.m */; };
 		AACE5447240910D00081A1CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE5446240910D00081A1CD /* UIView+Extension.m */; };
 		AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */; };
+		AAD4D898285C77900035B11E /* DynamicLibrayFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D897285C77900035B11E /* DynamicLibrayFramework.docc */; };
+		AAD4D89E285C77900035B11E /* DynamicLibrayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD4D894285C77900035B11E /* DynamicLibrayFramework.framework */; };
+		AAD4D8A5285C77900035B11E /* DynamicLibrayFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D8A4285C77900035B11E /* DynamicLibrayFrameworkTests.m */; };
+		AAD4D8A6285C77900035B11E /* DynamicLibrayFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD4D896285C77900035B11E /* DynamicLibrayFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD4D8A9285C77900035B11E /* DynamicLibrayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD4D894285C77900035B11E /* DynamicLibrayFramework.framework */; };
+		AAD4D8AA285C77900035B11E /* DynamicLibrayFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AAD4D894285C77900035B11E /* DynamicLibrayFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AAD4D8B4285C77B50035B11E /* DynLog.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD4D8B2285C77B50035B11E /* DynLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD4D8B5285C77B50035B11E /* DynLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D8B3285C77B50035B11E /* DynLog.m */; };
+		AAD4D8B8285C7C340035B11E /* UIColor+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD4D8B6285C7C340035B11E /* UIColor+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD4D8B9285C7C340035B11E /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D8B7285C7C340035B11E /* UIColor+Category.m */; };
 		AAE282F023FE80B3002CB6AF /* LYBCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282EF23FE80B3002CB6AF /* LYBCarouselViewController.m */; };
 		AAE282F423FE8820002CB6AF /* LYBCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282F323FE8820002CB6AF /* LYBCarouselView.m */; };
 		AAE282F723FE8850002CB6AF /* LYBCarouselFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282F623FE8850002CB6AF /* LYBCarouselFlowLayout.m */; };
@@ -86,6 +100,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AAD4D89F285C77900035B11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D7E3B620439E4C00AE2C08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD4D893285C77900035B11E;
+			remoteInfo = DynamicLibrayFramework;
+		};
+		AAD4D8A1285C77900035B11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D7E3B620439E4C00AE2C08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1D7E3BD20439E4C00AE2C08;
+			remoteInfo = OCStudyDemo;
+		};
+		AAD4D8A7285C77900035B11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D7E3B620439E4C00AE2C08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD4D893285C77900035B11E;
+			remoteInfo = DynamicLibrayFramework;
+		};
 		B1D7E3D720439E4D00AE2C08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1D7E3B620439E4C00AE2C08 /* Project object */;
@@ -102,6 +137,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AAD4D8AB285C77900035B11E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AAD4D8AA285C77900035B11E /* DynamicLibrayFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		70DEE8E71C6DE98ECF36FE68 /* Pods-OCStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCStudyDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCStudyDemo/Pods-OCStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8F2F5457BAADC7812A7ECDC7 /* Pods-OCStudyDemo-OCStudyDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCStudyDemo-OCStudyDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-OCStudyDemo-OCStudyDemoUITests/Pods-OCStudyDemo-OCStudyDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +163,8 @@
 		AA056F8623826D1A002DC2EF /* LYBHitTestBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBHitTestBView.m; sourceTree = "<group>"; };
 		AA056F8823826D28002DC2EF /* LYBHitTestCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBHitTestCView.h; sourceTree = "<group>"; };
 		AA056F8923826D28002DC2EF /* LYBHitTestCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBHitTestCView.m; sourceTree = "<group>"; };
+		AA119F30287E9A3800B0E0E6 /* LYBRepeatMethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBRepeatMethodViewController.h; sourceTree = "<group>"; };
+		AA119F31287E9A3800B0E0E6 /* LYBRepeatMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBRepeatMethodViewController.m; sourceTree = "<group>"; };
 		AA21A5B62351B823000CEBAB /* LYBMethodModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBMethodModel.h; sourceTree = "<group>"; };
 		AA21A5B72351B823000CEBAB /* LYBMethodModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBMethodModel.m; sourceTree = "<group>"; };
 		AA6324E6237C140100F5DEFE /* LYBKartunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBKartunViewController.h; sourceTree = "<group>"; };
@@ -137,6 +188,10 @@
 		AA89B65E25F7A38200235CFD /* LYBBorderRadiusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBBorderRadiusViewController.m; sourceTree = "<group>"; };
 		AA89B66325F7A5A200235CFD /* LYBCornerRadiusUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCornerRadiusUtil.h; sourceTree = "<group>"; };
 		AA89B66425F7A5A200235CFD /* LYBCornerRadiusUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBCornerRadiusUtil.m; sourceTree = "<group>"; };
+		AA8DE10927D0C8B900A67C61 /* NSObject+LYBRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LYBRuntime.h"; sourceTree = "<group>"; };
+		AA8DE10A27D0C8B900A67C61 /* NSObject+LYBRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LYBRuntime.m"; sourceTree = "<group>"; };
+		AA8DE10C27D1E76F00A67C61 /* NSBundle+LYBInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LYBInfo.h"; sourceTree = "<group>"; };
+		AA8DE10D27D1E76F00A67C61 /* NSBundle+LYBInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LYBInfo.m"; sourceTree = "<group>"; };
 		AAA2598825D376F000FAC814 /* DYNTouchDownGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNTouchDownGestureRecognizer.m; sourceTree = "<group>"; };
 		AAA2598925D376F000FAC814 /* DYNTouchDownGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNTouchDownGestureRecognizer.h; sourceTree = "<group>"; };
 		AAB0F003268C0E76007CA33B /* LYBPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBPageControl.h; sourceTree = "<group>"; };
@@ -147,6 +202,15 @@
 		AACE5446240910D00081A1CD /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		AACF0425233DAC1400CBDD6F /* LYBAttributeStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBAttributeStringViewController.h; sourceTree = "<group>"; };
 		AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBAttributeStringViewController.m; sourceTree = "<group>"; };
+		AAD4D894285C77900035B11E /* DynamicLibrayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicLibrayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD4D896285C77900035B11E /* DynamicLibrayFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLibrayFramework.h; sourceTree = "<group>"; };
+		AAD4D897285C77900035B11E /* DynamicLibrayFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DynamicLibrayFramework.docc; sourceTree = "<group>"; };
+		AAD4D89D285C77900035B11E /* DynamicLibrayFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicLibrayFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD4D8A4285C77900035B11E /* DynamicLibrayFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLibrayFrameworkTests.m; sourceTree = "<group>"; };
+		AAD4D8B2285C77B50035B11E /* DynLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynLog.h; sourceTree = "<group>"; };
+		AAD4D8B3285C77B50035B11E /* DynLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynLog.m; sourceTree = "<group>"; };
+		AAD4D8B6285C7C340035B11E /* UIColor+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		AAD4D8B7285C7C340035B11E /* UIColor+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		AAD7355B238FF5C700A6AE11 /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = ../my_flutter/.ios/Flutter/App.framework; sourceTree = "<group>"; };
 		AAD7355F238FF5F100A6AE11 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = ../my_flutter/.ios/Flutter/engine/Flutter.framework; sourceTree = "<group>"; };
 		AAE282EE23FE80B3002CB6AF /* LYBCarouselViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCarouselViewController.h; sourceTree = "<group>"; };
@@ -262,10 +326,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AAD4D891285C77900035B11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4D89A285C77900035B11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4D89E285C77900035B11E /* DynamicLibrayFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1D7E3BB20439E4C00AE2C08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD4D8A9285C77900035B11E /* DynamicLibrayFramework.framework in Frameworks */,
 				A68A8774D65275734F68FD4E /* Pods_OCStudyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +398,15 @@
 			path = HitTest;
 			sourceTree = "<group>";
 		};
+		AA119F2F287E9A1900B0E0E6 /* RepeatMethod */ = {
+			isa = PBXGroup;
+			children = (
+				AA119F30287E9A3800B0E0E6 /* LYBRepeatMethodViewController.h */,
+				AA119F31287E9A3800B0E0E6 /* LYBRepeatMethodViewController.m */,
+			);
+			path = RepeatMethod;
+			sourceTree = "<group>";
+		};
 		AA7028002372BACC0045F677 /* Kartun */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +453,27 @@
 				AA21A5B72351B823000CEBAB /* LYBMethodModel.m */,
 			);
 			path = AttributeString;
+			sourceTree = "<group>";
+		};
+		AAD4D895285C77900035B11E /* DynamicLibrayFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4D896285C77900035B11E /* DynamicLibrayFramework.h */,
+				AAD4D897285C77900035B11E /* DynamicLibrayFramework.docc */,
+				AAD4D8B2285C77B50035B11E /* DynLog.h */,
+				AAD4D8B3285C77B50035B11E /* DynLog.m */,
+				AAD4D8B6285C7C340035B11E /* UIColor+Category.h */,
+				AAD4D8B7285C7C340035B11E /* UIColor+Category.m */,
+			);
+			path = DynamicLibrayFramework;
+			sourceTree = "<group>";
+		};
+		AAD4D8A3285C77900035B11E /* DynamicLibrayFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4D8A4285C77900035B11E /* DynamicLibrayFrameworkTests.m */,
+			);
+			path = DynamicLibrayFrameworkTests;
 			sourceTree = "<group>";
 		};
 		AAE282ED23FE8090002CB6AF /* Carousel */ = {
@@ -532,6 +642,10 @@
 				B1C6461621008D0B00F680BD /* LYBInvocation.m */,
 				B155583C2107122A00A45E41 /* NSObject+LYBKVO.h */,
 				B155583D2107122A00A45E41 /* NSObject+LYBKVO.m */,
+				AA8DE10927D0C8B900A67C61 /* NSObject+LYBRuntime.h */,
+				AA8DE10A27D0C8B900A67C61 /* NSObject+LYBRuntime.m */,
+				AA8DE10C27D1E76F00A67C61 /* NSBundle+LYBInfo.h */,
+				AA8DE10D27D1E76F00A67C61 /* NSBundle+LYBInfo.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -574,6 +688,8 @@
 				B1D7E3C020439E4C00AE2C08 /* OCStudyDemo */,
 				B1D7E3D920439E4D00AE2C08 /* OCStudyDemoTests */,
 				B1D7E3E420439E4D00AE2C08 /* OCStudyDemoUITests */,
+				AAD4D895285C77900035B11E /* DynamicLibrayFramework */,
+				AAD4D8A3285C77900035B11E /* DynamicLibrayFrameworkTests */,
 				B1D7E3BF20439E4C00AE2C08 /* Products */,
 				AE61A14593D5BCE6477F50E9 /* Pods */,
 				8C919B2B41F418D031F249C5 /* Frameworks */,
@@ -586,6 +702,8 @@
 				B1D7E3BE20439E4C00AE2C08 /* OCStudyDemo.app */,
 				B1D7E3D620439E4D00AE2C08 /* OCStudyDemoTests.xctest */,
 				B1D7E3E120439E4D00AE2C08 /* OCStudyDemoUITests.xctest */,
+				AAD4D894285C77900035B11E /* DynamicLibrayFramework.framework */,
+				AAD4D89D285C77900035B11E /* DynamicLibrayFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -593,6 +711,7 @@
 		B1D7E3C020439E4C00AE2C08 /* OCStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA119F2F287E9A1900B0E0E6 /* RepeatMethod */,
 				AA89B65C25F7A35A00235CFD /* BorderRadius */,
 				AA8118E924B85BE10061C498 /* SVG */,
 				AAE282ED23FE8090002CB6AF /* Carousel */,
@@ -677,7 +796,57 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		AAD4D88F285C77900035B11E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4D8A6285C77900035B11E /* DynamicLibrayFramework.h in Headers */,
+				AAD4D8B8285C7C340035B11E /* UIColor+Category.h in Headers */,
+				AAD4D8B4285C77B50035B11E /* DynLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		AAD4D893285C77900035B11E /* DynamicLibrayFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD4D8B0285C77900035B11E /* Build configuration list for PBXNativeTarget "DynamicLibrayFramework" */;
+			buildPhases = (
+				AAD4D88F285C77900035B11E /* Headers */,
+				AAD4D890285C77900035B11E /* Sources */,
+				AAD4D891285C77900035B11E /* Frameworks */,
+				AAD4D892285C77900035B11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicLibrayFramework;
+			productName = DynamicLibrayFramework;
+			productReference = AAD4D894285C77900035B11E /* DynamicLibrayFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAD4D89C285C77900035B11E /* DynamicLibrayFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD4D8B1285C77900035B11E /* Build configuration list for PBXNativeTarget "DynamicLibrayFrameworkTests" */;
+			buildPhases = (
+				AAD4D899285C77900035B11E /* Sources */,
+				AAD4D89A285C77900035B11E /* Frameworks */,
+				AAD4D89B285C77900035B11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD4D8A0285C77900035B11E /* PBXTargetDependency */,
+				AAD4D8A2285C77900035B11E /* PBXTargetDependency */,
+			);
+			name = DynamicLibrayFrameworkTests;
+			productName = DynamicLibrayFrameworkTests;
+			productReference = AAD4D89D285C77900035B11E /* DynamicLibrayFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B1D7E3BD20439E4C00AE2C08 /* OCStudyDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1D7E3EA20439E4D00AE2C08 /* Build configuration list for PBXNativeTarget "OCStudyDemo" */;
@@ -688,10 +857,12 @@
 				B1D7E3BB20439E4C00AE2C08 /* Frameworks */,
 				B1D7E3BC20439E4C00AE2C08 /* Resources */,
 				F1D56793AD924417C36C3896 /* [CP] Embed Pods Frameworks */,
+				AAD4D8AB285C77900035B11E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AAD4D8A8285C77900035B11E /* PBXTargetDependency */,
 			);
 			name = OCStudyDemo;
 			productName = OCStudyDemo;
@@ -747,6 +918,15 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Albin;
 				TargetAttributes = {
+					AAD4D893285C77900035B11E = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					AAD4D89C285C77900035B11E = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1D7E3BD20439E4C00AE2C08;
+					};
 					B1D7E3BD20439E4C00AE2C08 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -779,11 +959,27 @@
 				B1D7E3BD20439E4C00AE2C08 /* OCStudyDemo */,
 				B1D7E3D520439E4D00AE2C08 /* OCStudyDemoTests */,
 				B1D7E3E020439E4D00AE2C08 /* OCStudyDemoUITests */,
+				AAD4D893285C77900035B11E /* DynamicLibrayFramework */,
+				AAD4D89C285C77900035B11E /* DynamicLibrayFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AAD4D892285C77900035B11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4D89B285C77900035B11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1D7E3BC20439E4C00AE2C08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -943,13 +1139,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AAD4D890285C77900035B11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4D8B5285C77B50035B11E /* DynLog.m in Sources */,
+				AAD4D898285C77900035B11E /* DynamicLibrayFramework.docc in Sources */,
+				AAD4D8B9285C7C340035B11E /* UIColor+Category.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4D899285C77900035B11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4D8A5285C77900035B11E /* DynamicLibrayFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1D7E3BA20439E4C00AE2C08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA98068628753BA000BC7FC2 /* UIColor+Category.m in Sources */,
+				B12D2AD8207466AA001999E3 /* UIColor+Extension.m in Sources */,
 				AA84B76A2372D676005782DE /* LZThreadBacktrace.m in Sources */,
 				B1D7E3C620439E4C00AE2C08 /* ViewController.m in Sources */,
 				AA056F8A23826D28002DC2EF /* LYBHitTestCView.m in Sources */,
+				AA119F32287E9A3800B0E0E6 /* LYBRepeatMethodViewController.m in Sources */,
 				B14DB67E22F9958A00BC2044 /* LYBOperation.m in Sources */,
 				B1F0302C204D1DB90085493A /* LYBPerson2.m in Sources */,
 				B1D2DB592044FAE000DEE835 /* LYBCircelCollectionViewController.m in Sources */,
@@ -977,6 +1194,8 @@
 				B14DB68222FAC44900BC2044 /* LYBAnimationViewController.m in Sources */,
 				B1C64614210065D600F680BD /* LYBTestMethod.m in Sources */,
 				B1A025E5210AC0820053C137 /* LYBSortViewController.m in Sources */,
+				AA8DE10B27D0C8B900A67C61 /* NSObject+LYBRuntime.m in Sources */,
+				AA8DE10E27D1E76F00A67C61 /* NSBundle+LYBInfo.m in Sources */,
 				B1721760207AFD580024B212 /* LYBTimerViewController.m in Sources */,
 				B12516E8206C816F00D3A758 /* LYBBlockModel.m in Sources */,
 				B1D2DB622044FBFF00DEE835 /* CNCilrcleCollectionViewCell.m in Sources */,
@@ -989,7 +1208,6 @@
 				AA056F8723826D1A002DC2EF /* LYBHitTestBView.m in Sources */,
 				B1C64611210030B500F680BD /* LYBAutoDictionnary.m in Sources */,
 				AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */,
-				B12D2AD8207466AA001999E3 /* UIColor+Extension.m in Sources */,
 				B1D2DB5F2044FBCE00DEE835 /* DSCircularLayout.m in Sources */,
 				AA6324E8237C140100F5DEFE /* LYBKartunViewController.m in Sources */,
 				B1D7E3C320439E4C00AE2C08 /* AppDelegate.m in Sources */,
@@ -1032,6 +1250,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AAD4D8A0285C77900035B11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD4D893285C77900035B11E /* DynamicLibrayFramework */;
+			targetProxy = AAD4D89F285C77900035B11E /* PBXContainerItemProxy */;
+		};
+		AAD4D8A2285C77900035B11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1D7E3BD20439E4C00AE2C08 /* OCStudyDemo */;
+			targetProxy = AAD4D8A1285C77900035B11E /* PBXContainerItemProxy */;
+		};
+		AAD4D8A8285C77900035B11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD4D893285C77900035B11E /* DynamicLibrayFramework */;
+			targetProxy = AAD4D8A7285C77900035B11E /* PBXContainerItemProxy */;
+		};
 		B1D7E3D820439E4D00AE2C08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B1D7E3BD20439E4C00AE2C08 /* OCStudyDemo */;
@@ -1064,6 +1297,108 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AAD4D8AC285C77900035B11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U8CC2R2ZVM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Albin. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dynamicLibrayFramework.DynamicLibrayFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAD4D8AD285C77900035B11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U8CC2R2ZVM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Albin. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dynamicLibrayFramework.DynamicLibrayFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAD4D8AE285C77900035B11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dynamicLibrayFramework.DynamicLibrayFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCStudyDemo.app/OCStudyDemo";
+			};
+			name = Debug;
+		};
+		AAD4D8AF285C77900035B11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dynamicLibrayFramework.DynamicLibrayFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCStudyDemo.app/OCStudyDemo";
+			};
+			name = Release;
+		};
 		B1D7E3E820439E4D00AE2C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1116,6 +1451,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1168,6 +1504,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1183,11 +1520,14 @@
 				DEVELOPMENT_TEAM = U8CC2R2ZVM;
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = /Applications/flutter;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Albin.OCStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1203,10 +1543,12 @@
 				DEVELOPMENT_TEAM = U8CC2R2ZVM;
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = /Applications/flutter;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Albin.OCStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1275,6 +1617,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AAD4D8B0285C77900035B11E /* Build configuration list for PBXNativeTarget "DynamicLibrayFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD4D8AC285C77900035B11E /* Debug */,
+				AAD4D8AD285C77900035B11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD4D8B1285C77900035B11E /* Build configuration list for PBXNativeTarget "DynamicLibrayFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD4D8AE285C77900035B11E /* Debug */,
+				AAD4D8AF285C77900035B11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B1D7E3B920439E4C00AE2C08 /* Build configuration list for PBXProject "OCStudyDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

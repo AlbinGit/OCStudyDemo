@@ -8,6 +8,7 @@
 
 #import "LYBRadarView.h"
 #import "LYBSectorView.h"
+#import "UIColor+Extension.h"
 
 typedef NS_ENUM(NSUInteger, SectorAnimationStatus) {//扇形视图动画状态
     SectorAnimationUnStart,

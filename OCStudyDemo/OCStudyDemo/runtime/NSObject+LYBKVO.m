@@ -12,14 +12,11 @@
 NSString *const KLYBKVOClassPrefix = @"LYBKVOClassPrefix_";
 NSString *const KLYBKVOAssociatedObservers = @"LYBKVOAssociatedObservers";
 
-@interface LYBObservationInfo : NSObject
+@interface LYBObservationInfo()
 
 @property (nonatomic ,weak) NSObject *observer;
 @property (nonatomic ,copy) NSString *key;
 @property (nonatomic ,copy) LYBObservingBlock block;
-
-
-
 @end
 
 @implementation LYBObservationInfo
@@ -46,8 +43,8 @@ static NSArray *ClassMethodNames(Class c){
     return array;
 }
 
-static void PrintDescription(NSString *name, id obj){
-    NSString *str = [NSString stringWithFormat:@"%@:%@\n\tNSObject class %s\n\tRuntime class %s\n\ttimplements methods <%@>\n\n",name,obj,class_getName([obj class]),class_getName(object_getClass(obj)),[ClassMethodNames(object_getClass(obj)) componentsJoinedByString:@","]];
+void PrintDescription(NSString *name, id obj){
+    NSString *str = [NSString stringWithFormat:@"-->%@:%@\n\tNSObject class %s\n\tRuntime class %s\n\ttimplements methods <%@>\n\n",name,obj,class_getName([obj class]),class_getName(object_getClass(obj)),[ClassMethodNames(object_getClass(obj)) componentsJoinedByString:@","]];
     printf("%s\n",[str UTF8String]);
 }
 

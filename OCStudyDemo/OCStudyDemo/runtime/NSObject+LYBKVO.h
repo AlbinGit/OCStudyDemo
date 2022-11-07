@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@interface LYBObservationInfo : NSObject
+
+void PrintDescription(NSString *name, id obj);
+
+@end
+
+
 typedef void(^LYBObservingBlock) (id observedObject,NSString *observedKey,id oldValue,id newValue);
 
 @interface NSObject (LYBKVO)

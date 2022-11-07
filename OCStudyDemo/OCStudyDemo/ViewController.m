@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LYBFlutterViewController.h"
-
+#import <DynamicLibrayFramework/DynLog.h>
 @interface ViewController ()
 
 @property (nonatomic, strong) NSArray *dataArray;
@@ -34,8 +34,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [DynLog dyn_log];
+    SayHello();
     
-    _dataArray = @[@{@"title":@"浅拷贝&深拷贝",
+    _dataArray = @[@{@"title":@"重复方法测试",
+                     @"class":@"LYBRepeatMethodViewController",
+                     @"type":@"Normal",
+                     },
+                   @{@"title":@"浅拷贝&深拷贝",
                      @"class":@"LYBCopyViewController",
                      @"type":@"Normal",
                      },
@@ -170,5 +176,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+void SayHello (void) {
+    printf("Hello");
+}
 
 @end

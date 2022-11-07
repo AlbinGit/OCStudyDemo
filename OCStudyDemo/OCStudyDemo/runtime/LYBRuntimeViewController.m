@@ -52,7 +52,7 @@
     }
     
     [self p_kvoTest];
-    
+    PrintDescription(@"test",self);
 }
 
 - (void)p_kvoTest{

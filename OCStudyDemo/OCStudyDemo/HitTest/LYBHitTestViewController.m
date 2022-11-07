@@ -92,6 +92,10 @@
 
 - (void)touchDownA {
     NSLog(@"touchDownA");
+    NSString *url = @"zhongliangroomdetail://params?pageId=qianYue&source=1&houseId=d62e23f9d4684551866d58650d7f7ef3";
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
 }
 
 - (void)tapB {

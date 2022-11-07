@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-
 int func(int count)
 {
     return count + 1;

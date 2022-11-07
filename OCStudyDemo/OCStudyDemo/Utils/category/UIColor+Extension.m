@@ -15,6 +15,10 @@
     return [self getColor:hexStr andAlpha:1];
 }
 
++ (void)log {
+    NSLog(@"UIColor (Extension)");
+}
+
 + (UIColor *)colorWithHexString:(NSString *)hexStr alpha:(CGFloat)aAlpha{
     return [self getColor:hexStr andAlpha:aAlpha];
 }
@@ -59,5 +63,12 @@
     return [self colorWithRed:(CGFloat)(r/255.0) green:(CGFloat)(g/255.0) blue:(CGFloat)(b/255.0) alpha:1];
 }
 
++ (void)a {
+    NSLog(@"+a");
+}
+
+- (void)a {
+    NSLog(@"-a");
+}
 
 @end
