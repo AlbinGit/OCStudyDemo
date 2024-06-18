@@ -7,6 +7,7 @@
 //
 
 #import "LYBSVGViewController.h"
+#import "LYBImageView.h"
 
 @interface LYBSVGViewController ()
 
@@ -40,6 +41,16 @@
     UILabel * label1 = [[UILabel alloc] initWithFrame:CGRectMake(10, 300, 300, 50)];
     label1.text = @"啊啊啊嗷123";
     [self.view addSubview: label1];
+    
+    
+    LYBImageView *imgV1 = [[LYBImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
+    imgV1.image = [UIImage imageNamed:@"11"];
+    [self.view addSubview:imgV1];
+    
+    LYBImageView *imgV2 = [[LYBImageView alloc] initWithFrame:CGRectMake(0, 110, SCREEN_WIDTH, 300)];
+    imgV2.image = [UIImage imageNamed:@"12"];
+    [self.view addSubview:imgV2];
+    
 }
 
 /*

@@ -17,6 +17,15 @@
 		AA6324E8237C140100F5DEFE /* LYBKartunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6324E7237C140100F5DEFE /* LYBKartunViewController.m */; };
 		AA6324EB237E4B4E00F5DEFE /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6324E9237E4B4E00F5DEFE /* SMCallStack.m */; };
 		AA6324EE237E4BB700F5DEFE /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6324EC237E4BB700F5DEFE /* SMCallLib.m */; };
+		AA68E5B02B29D62300CE52AD /* FSSContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA68E5AC2B29D62300CE52AD /* FSSContainerView.m */; };
+		AA68E5B12B29D62300CE52AD /* UIView+FSSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AA68E5AD2B29D62300CE52AD /* UIView+FSSLayout.m */; };
+		AA68E5B42B2A90A100CE52AD /* LYBContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA68E5B32B2A90A100CE52AD /* LYBContainerViewController.m */; };
+		AA80EB372B450D50008AAF96 /* LYBNestScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA80EB362B450D50008AAF96 /* LYBNestScrollViewController.m */; };
+		AA80EB3A2B45446C008AAF96 /* LYBNestScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA80EB392B45446C008AAF96 /* LYBNestScrollCell.m */; };
+		AA80EB3D2B454EF6008AAF96 /* LYBSecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA80EB3C2B454EF6008AAF96 /* LYBSecondView.m */; };
+		AA80EB402B454F48008AAF96 /* LYBFatherScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA80EB3F2B454F48008AAF96 /* LYBFatherScrollView.m */; };
+		AA80EB432B46C4F8008AAF96 /* LYBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA80EB422B46C4F8008AAF96 /* LYBCollectionView.m */; };
+		AA80EB462B46DAB9008AAF96 /* LYBHandelScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = AA80EB452B46DAB9008AAF96 /* LYBHandelScroll.m */; };
 		AA8118EC24B85BF70061C498 /* LYBSVGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8118EB24B85BF70061C498 /* LYBSVGViewController.m */; };
 		AA8118F324B85CE30061C498 /* 2svg.svg in Resources */ = {isa = PBXBuildFile; fileRef = AA8118F124B85CE30061C498 /* 2svg.svg */; };
 		AA8118F424B85CE30061C498 /* 1svg.svg in Resources */ = {isa = PBXBuildFile; fileRef = AA8118F224B85CE30061C498 /* 1svg.svg */; };
@@ -33,6 +42,7 @@
 		AAA2598A25D376F000FAC814 /* DYNTouchDownGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA2598825D376F000FAC814 /* DYNTouchDownGestureRecognizer.m */; };
 		AAB0F005268C0E76007CA33B /* LYBPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F004268C0E76007CA33B /* LYBPageControl.m */; };
 		AAB0F008268C14B2007CA33B /* NSTimer+LYBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F007268C14B2007CA33B /* NSTimer+LYBCategory.m */; };
+		AAB1A06D2B8ED8B1007CFC24 /* LYBURLComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB1A06C2B8ED8B1007CFC24 /* LYBURLComponentsViewController.m */; };
 		AACE5447240910D00081A1CD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AACE5446240910D00081A1CD /* UIView+Extension.m */; };
 		AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF0426233DAC1400CBDD6F /* LYBAttributeStringViewController.m */; };
 		AAD4D898285C77900035B11E /* DynamicLibrayFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D897285C77900035B11E /* DynamicLibrayFramework.docc */; };
@@ -45,6 +55,10 @@
 		AAD4D8B5285C77B50035B11E /* DynLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D8B3285C77B50035B11E /* DynLog.m */; };
 		AAD4D8B8285C7C340035B11E /* UIColor+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD4D8B6285C7C340035B11E /* UIColor+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAD4D8B9285C7C340035B11E /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4D8B7285C7C340035B11E /* UIColor+Category.m */; };
+		AADAEAF1299BAA3F00D45329 /* LYBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AADAEAF0299BAA3F00D45329 /* LYBImageView.m */; };
+		AAE1D4232B22C59000C2EE91 /* LYBBlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D4222B22C59000C2EE91 /* LYBBlurEffectViewController.m */; };
+		AAE1D4262B22C68300C2EE91 /* UIView+PPEX.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D4252B22C68300C2EE91 /* UIView+PPEX.m */; };
+		AAE1D4292B22F2D700C2EE91 /* UIImage+LYBBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D4282B22F2D700C2EE91 /* UIImage+LYBBlur.m */; };
 		AAE282F023FE80B3002CB6AF /* LYBCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282EF23FE80B3002CB6AF /* LYBCarouselViewController.m */; };
 		AAE282F423FE8820002CB6AF /* LYBCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282F323FE8820002CB6AF /* LYBCarouselView.m */; };
 		AAE282F723FE8850002CB6AF /* LYBCarouselFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE282F623FE8850002CB6AF /* LYBCarouselFlowLayout.m */; };
@@ -173,6 +187,24 @@
 		AA6324EA237E4B4E00F5DEFE /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
 		AA6324EC237E4BB700F5DEFE /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		AA6324ED237E4BB700F5DEFE /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
+		AA68E5AC2B29D62300CE52AD /* FSSContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSContainerView.m; sourceTree = "<group>"; };
+		AA68E5AD2B29D62300CE52AD /* UIView+FSSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSSLayout.m"; sourceTree = "<group>"; };
+		AA68E5AE2B29D62300CE52AD /* FSSContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSContainerView.h; sourceTree = "<group>"; };
+		AA68E5AF2B29D62300CE52AD /* UIView+FSSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSSLayout.h"; sourceTree = "<group>"; };
+		AA68E5B22B2A90A100CE52AD /* LYBContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBContainerViewController.h; sourceTree = "<group>"; };
+		AA68E5B32B2A90A100CE52AD /* LYBContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBContainerViewController.m; sourceTree = "<group>"; };
+		AA80EB352B450D50008AAF96 /* LYBNestScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBNestScrollViewController.h; sourceTree = "<group>"; };
+		AA80EB362B450D50008AAF96 /* LYBNestScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBNestScrollViewController.m; sourceTree = "<group>"; };
+		AA80EB382B45446C008AAF96 /* LYBNestScrollCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBNestScrollCell.h; sourceTree = "<group>"; };
+		AA80EB392B45446C008AAF96 /* LYBNestScrollCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBNestScrollCell.m; sourceTree = "<group>"; };
+		AA80EB3B2B454EF6008AAF96 /* LYBSecondView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBSecondView.h; sourceTree = "<group>"; };
+		AA80EB3C2B454EF6008AAF96 /* LYBSecondView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBSecondView.m; sourceTree = "<group>"; };
+		AA80EB3E2B454F48008AAF96 /* LYBFatherScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBFatherScrollView.h; sourceTree = "<group>"; };
+		AA80EB3F2B454F48008AAF96 /* LYBFatherScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBFatherScrollView.m; sourceTree = "<group>"; };
+		AA80EB412B46C4F8008AAF96 /* LYBCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCollectionView.h; sourceTree = "<group>"; };
+		AA80EB422B46C4F8008AAF96 /* LYBCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBCollectionView.m; sourceTree = "<group>"; };
+		AA80EB442B46DAB9008AAF96 /* LYBHandelScroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBHandelScroll.h; sourceTree = "<group>"; };
+		AA80EB452B46DAB9008AAF96 /* LYBHandelScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBHandelScroll.m; sourceTree = "<group>"; };
 		AA8118EA24B85BF70061C498 /* LYBSVGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBSVGViewController.h; sourceTree = "<group>"; };
 		AA8118EB24B85BF70061C498 /* LYBSVGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBSVGViewController.m; sourceTree = "<group>"; };
 		AA8118F124B85CE30061C498 /* 2svg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2svg.svg; sourceTree = "<group>"; };
@@ -198,6 +230,8 @@
 		AAB0F004268C0E76007CA33B /* LYBPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBPageControl.m; sourceTree = "<group>"; };
 		AAB0F006268C14B2007CA33B /* NSTimer+LYBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+LYBCategory.h"; sourceTree = "<group>"; };
 		AAB0F007268C14B2007CA33B /* NSTimer+LYBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+LYBCategory.m"; sourceTree = "<group>"; };
+		AAB1A06B2B8ED8B1007CFC24 /* LYBURLComponentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBURLComponentsViewController.h; sourceTree = "<group>"; };
+		AAB1A06C2B8ED8B1007CFC24 /* LYBURLComponentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBURLComponentsViewController.m; sourceTree = "<group>"; };
 		AACE5445240910D00081A1CD /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		AACE5446240910D00081A1CD /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		AACF0425233DAC1400CBDD6F /* LYBAttributeStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBAttributeStringViewController.h; sourceTree = "<group>"; };
@@ -213,6 +247,14 @@
 		AAD4D8B7285C7C340035B11E /* UIColor+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		AAD7355B238FF5C700A6AE11 /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = ../my_flutter/.ios/Flutter/App.framework; sourceTree = "<group>"; };
 		AAD7355F238FF5F100A6AE11 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = ../my_flutter/.ios/Flutter/engine/Flutter.framework; sourceTree = "<group>"; };
+		AADAEAEF299BAA3F00D45329 /* LYBImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBImageView.h; sourceTree = "<group>"; };
+		AADAEAF0299BAA3F00D45329 /* LYBImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBImageView.m; sourceTree = "<group>"; };
+		AAE1D4212B22C59000C2EE91 /* LYBBlurEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBBlurEffectViewController.h; sourceTree = "<group>"; };
+		AAE1D4222B22C59000C2EE91 /* LYBBlurEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBBlurEffectViewController.m; sourceTree = "<group>"; };
+		AAE1D4242B22C68300C2EE91 /* UIView+PPEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PPEX.h"; sourceTree = "<group>"; };
+		AAE1D4252B22C68300C2EE91 /* UIView+PPEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PPEX.m"; sourceTree = "<group>"; };
+		AAE1D4272B22F2D700C2EE91 /* UIImage+LYBBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LYBBlur.h"; sourceTree = "<group>"; };
+		AAE1D4282B22F2D700C2EE91 /* UIImage+LYBBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LYBBlur.m"; sourceTree = "<group>"; };
 		AAE282EE23FE80B3002CB6AF /* LYBCarouselViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCarouselViewController.h; sourceTree = "<group>"; };
 		AAE282EF23FE80B3002CB6AF /* LYBCarouselViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBCarouselViewController.m; sourceTree = "<group>"; };
 		AAE282F123FE87EB002CB6AF /* LYBCarouselProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBCarouselProtocol.h; sourceTree = "<group>"; };
@@ -407,6 +449,19 @@
 			path = RepeatMethod;
 			sourceTree = "<group>";
 		};
+		AA68E5AB2B29D5F000CE52AD /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				AA68E5AE2B29D62300CE52AD /* FSSContainerView.h */,
+				AA68E5AC2B29D62300CE52AD /* FSSContainerView.m */,
+				AA68E5AF2B29D62300CE52AD /* UIView+FSSLayout.h */,
+				AA68E5AD2B29D62300CE52AD /* UIView+FSSLayout.m */,
+				AA68E5B22B2A90A100CE52AD /* LYBContainerViewController.h */,
+				AA68E5B32B2A90A100CE52AD /* LYBContainerViewController.m */,
+			);
+			path = ContainerView;
+			sourceTree = "<group>";
+		};
 		AA7028002372BACC0045F677 /* Kartun */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +479,25 @@
 			path = Kartun;
 			sourceTree = "<group>";
 		};
+		AA80EB342B450D3A008AAF96 /* NestScroll */ = {
+			isa = PBXGroup;
+			children = (
+				AA80EB352B450D50008AAF96 /* LYBNestScrollViewController.h */,
+				AA80EB362B450D50008AAF96 /* LYBNestScrollViewController.m */,
+				AA80EB382B45446C008AAF96 /* LYBNestScrollCell.h */,
+				AA80EB392B45446C008AAF96 /* LYBNestScrollCell.m */,
+				AA80EB3B2B454EF6008AAF96 /* LYBSecondView.h */,
+				AA80EB3C2B454EF6008AAF96 /* LYBSecondView.m */,
+				AA80EB3E2B454F48008AAF96 /* LYBFatherScrollView.h */,
+				AA80EB3F2B454F48008AAF96 /* LYBFatherScrollView.m */,
+				AA80EB412B46C4F8008AAF96 /* LYBCollectionView.h */,
+				AA80EB422B46C4F8008AAF96 /* LYBCollectionView.m */,
+				AA80EB442B46DAB9008AAF96 /* LYBHandelScroll.h */,
+				AA80EB452B46DAB9008AAF96 /* LYBHandelScroll.m */,
+			);
+			path = NestScroll;
+			sourceTree = "<group>";
+		};
 		AA8118E924B85BE10061C498 /* SVG */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +505,8 @@
 				AA8118F124B85CE30061C498 /* 2svg.svg */,
 				AA8118EA24B85BF70061C498 /* LYBSVGViewController.h */,
 				AA8118EB24B85BF70061C498 /* LYBSVGViewController.m */,
+				AADAEAEF299BAA3F00D45329 /* LYBImageView.h */,
+				AADAEAF0299BAA3F00D45329 /* LYBImageView.m */,
 			);
 			path = SVG;
 			sourceTree = "<group>";
@@ -442,6 +518,15 @@
 				AA89B65E25F7A38200235CFD /* LYBBorderRadiusViewController.m */,
 			);
 			path = BorderRadius;
+			sourceTree = "<group>";
+		};
+		AAB1A06A2B8ED875007CFC24 /* NSURLComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1A06B2B8ED8B1007CFC24 /* LYBURLComponentsViewController.h */,
+				AAB1A06C2B8ED8B1007CFC24 /* LYBURLComponentsViewController.m */,
+			);
+			path = NSURLComponents;
 			sourceTree = "<group>";
 		};
 		AACF0424233DABF100CBDD6F /* AttributeString */ = {
@@ -474,6 +559,19 @@
 				AAD4D8A4285C77900035B11E /* DynamicLibrayFrameworkTests.m */,
 			);
 			path = DynamicLibrayFrameworkTests;
+			sourceTree = "<group>";
+		};
+		AAE1D4202B22C55500C2EE91 /* BlurEffect */ = {
+			isa = PBXGroup;
+			children = (
+				AAE1D4212B22C59000C2EE91 /* LYBBlurEffectViewController.h */,
+				AAE1D4222B22C59000C2EE91 /* LYBBlurEffectViewController.m */,
+				AAE1D4242B22C68300C2EE91 /* UIView+PPEX.h */,
+				AAE1D4252B22C68300C2EE91 /* UIView+PPEX.m */,
+				AAE1D4272B22F2D700C2EE91 /* UIImage+LYBBlur.h */,
+				AAE1D4282B22F2D700C2EE91 /* UIImage+LYBBlur.m */,
+			);
+			path = BlurEffect;
 			sourceTree = "<group>";
 		};
 		AAE282ED23FE8090002CB6AF /* Carousel */ = {
@@ -711,6 +809,10 @@
 		B1D7E3C020439E4C00AE2C08 /* OCStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AAB1A06A2B8ED875007CFC24 /* NSURLComponents */,
+				AA80EB342B450D3A008AAF96 /* NestScroll */,
+				AA68E5AB2B29D5F000CE52AD /* ContainerView */,
+				AAE1D4202B22C55500C2EE91 /* BlurEffect */,
 				AA119F2F287E9A1900B0E0E6 /* RepeatMethod */,
 				AA89B65C25F7A35A00235CFD /* BorderRadius */,
 				AA8118E924B85BE10061C498 /* SVG */,
@@ -856,8 +958,8 @@
 				B1D7E3BA20439E4C00AE2C08 /* Sources */,
 				B1D7E3BB20439E4C00AE2C08 /* Frameworks */,
 				B1D7E3BC20439E4C00AE2C08 /* Resources */,
-				F1D56793AD924417C36C3896 /* [CP] Embed Pods Frameworks */,
 				AAD4D8AB285C77900035B11E /* Embed Frameworks */,
+				8950168688DA6B9AE33BFB86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -896,7 +998,7 @@
 				B1D7E3DD20439E4D00AE2C08 /* Sources */,
 				B1D7E3DE20439E4D00AE2C08 /* Frameworks */,
 				B1D7E3DF20439E4D00AE2C08 /* Resources */,
-				764D2793A3CEB33431D53658 /* [CP] Embed Pods Frameworks */,
+				A9E876739E6096392B8E9C64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1034,13 +1136,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		764D2793A3CEB33431D53658 /* [CP] Embed Pods Frameworks */ = {
+		8950168688DA6B9AE33BFB86 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo-OCStudyDemoUITests/Pods-OCStudyDemo-OCStudyDemoUITests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo/Pods-OCStudyDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
@@ -1051,7 +1153,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo-OCStudyDemoUITests/Pods-OCStudyDemo-OCStudyDemoUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo/Pods-OCStudyDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A26632FC297750ED3A2ED56E /* [CP] Check Pods Manifest.lock */ = {
@@ -1074,6 +1176,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E876739E6096392B8E9C64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo-OCStudyDemoUITests/Pods-OCStudyDemo-OCStudyDemoUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo-OCStudyDemoUITests/Pods-OCStudyDemo-OCStudyDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AAB4A01E238F5E26001E9733 /* Run Script */ = {
@@ -1116,26 +1238,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F1D56793AD924417C36C3896 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo/Pods-OCStudyDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCStudyDemo/Pods-OCStudyDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1168,21 +1270,31 @@
 				AA056F8A23826D28002DC2EF /* LYBHitTestCView.m in Sources */,
 				AA119F32287E9A3800B0E0E6 /* LYBRepeatMethodViewController.m in Sources */,
 				B14DB67E22F9958A00BC2044 /* LYBOperation.m in Sources */,
+				AA68E5B02B29D62300CE52AD /* FSSContainerView.m in Sources */,
 				B1F0302C204D1DB90085493A /* LYBPerson2.m in Sources */,
 				B1D2DB592044FAE000DEE835 /* LYBCircelCollectionViewController.m in Sources */,
 				AACE5447240910D00081A1CD /* UIView+Extension.m in Sources */,
 				AAB0F008268C14B2007CA33B /* NSTimer+LYBCategory.m in Sources */,
+				AA80EB432B46C4F8008AAF96 /* LYBCollectionView.m in Sources */,
 				AAED811823B0D44E00192C37 /* LYBFlutterViewController.m in Sources */,
+				AA80EB462B46DAB9008AAF96 /* LYBHandelScroll.m in Sources */,
 				B12516E2206C787900D3A758 /* LYBBlockViewController.m in Sources */,
+				AAE1D4262B22C68300C2EE91 /* UIView+PPEX.m in Sources */,
 				B1D5780C20808F0400FAEE96 /* LYBThreadViewController.m in Sources */,
+				AAB1A06D2B8ED8B1007CFC24 /* LYBURLComponentsViewController.m in Sources */,
 				B1D7E3FC2043A5C700AE2C08 /* LYBShallowCopyModel.m in Sources */,
 				AAE282F423FE8820002CB6AF /* LYBCarouselView.m in Sources */,
 				B155583E2107122A00A45E41 /* NSObject+LYBKVO.m in Sources */,
 				B11C46562126C56600D89D8B /* LYBLockViewController.m in Sources */,
+				AA68E5B42B2A90A100CE52AD /* LYBContainerViewController.m in Sources */,
+				AA80EB3D2B454EF6008AAF96 /* LYBSecondView.m in Sources */,
 				B1D7E3D120439E4C00AE2C08 /* main.m in Sources */,
 				AA21A5B82351B823000CEBAB /* LYBMethodModel.m in Sources */,
 				AAE282F023FE80B3002CB6AF /* LYBCarouselViewController.m in Sources */,
+				AA80EB372B450D50008AAF96 /* LYBNestScrollViewController.m in Sources */,
+				AAE1D4292B22F2D700C2EE91 /* UIImage+LYBBlur.m in Sources */,
 				B12D2AD02074649E001999E3 /* LYBRadarView.m in Sources */,
+				AADAEAF1299BAA3F00D45329 /* LYBImageView.m in Sources */,
 				AAED811523B0CE8F00192C37 /* LYBFlutterNativePlugin.m in Sources */,
 				B12516E5206C78AF00D3A758 /* LYBBlockView.m in Sources */,
 				AAB0F005268C0E76007CA33B /* LYBPageControl.m in Sources */,
@@ -1203,11 +1315,13 @@
 				B160092820D91DCC00FE75C2 /* UIButton+LYBExtern.m in Sources */,
 				AAE282F723FE8850002CB6AF /* LYBCarouselFlowLayout.m in Sources */,
 				AA6324EE237E4BB700F5DEFE /* SMCallLib.m in Sources */,
+				AA80EB402B454F48008AAF96 /* LYBFatherScrollView.m in Sources */,
 				B1C6461721008D0B00F680BD /* LYBInvocation.m in Sources */,
 				AA056F8423826D0F002DC2EF /* LYBHitTestAView.m in Sources */,
 				AA056F8723826D1A002DC2EF /* LYBHitTestBView.m in Sources */,
 				B1C64611210030B500F680BD /* LYBAutoDictionnary.m in Sources */,
 				AACF0427233DAC1500CBDD6F /* LYBAttributeStringViewController.m in Sources */,
+				AA68E5B12B29D62300CE52AD /* UIView+FSSLayout.m in Sources */,
 				B1D2DB5F2044FBCE00DEE835 /* DSCircularLayout.m in Sources */,
 				AA6324E8237C140100F5DEFE /* LYBKartunViewController.m in Sources */,
 				B1D7E3C320439E4C00AE2C08 /* AppDelegate.m in Sources */,
@@ -1216,10 +1330,12 @@
 				AA6324EB237E4B4E00F5DEFE /* SMCallStack.m in Sources */,
 				B12D2AD320746524001999E3 /* LYBSectorView.m in Sources */,
 				B1D7E3FF2043A5D700AE2C08 /* LYBDeepCopyModel.m in Sources */,
+				AA80EB3A2B45446C008AAF96 /* LYBNestScrollCell.m in Sources */,
 				B150B3732133F447008C16CA /* LYBMediaViewController.m in Sources */,
 				B14DB67822F95EA500BC2044 /* LYBGCDViewController.m in Sources */,
 				B1D7E3F92043A56D00AE2C08 /* LYBCopyViewController.m in Sources */,
 				AAA2598A25D376F000FAC814 /* DYNTouchDownGestureRecognizer.m in Sources */,
+				AAE1D4232B22C59000C2EE91 /* LYBBlurEffectViewController.m in Sources */,
 				B14DB67522F8125F00BC2044 /* LYBWeak&unsafe_unretainedViewController.m in Sources */,
 				B172175D207AFB100024B212 /* LYBTimerClass.m in Sources */,
 				B1D2DB5E2044FBCE00DEE835 /* MagicCircleLayout.m in Sources */,
@@ -1450,7 +1566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1503,7 +1619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -1524,7 +1640,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -1547,7 +1663,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = OCStudyDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Albin.OCStudyDemo;

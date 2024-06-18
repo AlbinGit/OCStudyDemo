@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+platform :ios, '11.0'
+source 'https://github.com/CocoaPods/Specs.git'
 
 #flutter_application_path = '../flutter_module'
 #load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
@@ -26,4 +27,15 @@ target 'OCStudyDemo' do
     # Pods for testing
   end
 
+end
+
+# 解决老项目在Xcode14.3上无法运行模拟器问题
+#ld: file not found: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
+#clang: error: linker command failed with exit code 1 (use -v to see invocation)
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+    end
+  end
 end

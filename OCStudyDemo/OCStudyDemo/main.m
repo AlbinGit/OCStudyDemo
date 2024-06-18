@@ -19,10 +19,10 @@ int (*funcptr)(int) = &func;
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        int a = func(10);
-        NSLog(@"main a-->%d",a);
-        int b = funcptr(1);
-        NSLog(@"main b-->%d",b);
+//        int a = func(10);
+//        NSLog(@"main a-->%d",a);
+//        int b = funcptr(1);
+//        NSLog(@"main b-->%d",b);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

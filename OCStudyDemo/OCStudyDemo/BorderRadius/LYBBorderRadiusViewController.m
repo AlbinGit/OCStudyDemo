@@ -56,11 +56,16 @@
     [view4 addShadowWithSuperView:self.view cornerRadii:BNKCornerRadiiMake(50, 20, 20, 35) shadowColor:[UIColor blackColor] shadowOffset:CGSizeMake(0, 2) shadowOpacity:0.5 shadowRadius:4];
     [self.view addSubview:view4];
     
-    UIView *view5 = [[UIView alloc] initWithFrame:CGRectMake(10, view4.maxY + 10, 100, 100)];
-    view5.backgroundColor = [UIColor whiteColor];
+    UIView *view6 = [[UIView alloc] initWithFrame:CGRectMake(20, view4.maxY + 20, 100, 100)];
+    view6.backgroundColor = [UIColor yellowColor];
+    view6.layer.cornerRadius = 20;
+    [self.view addSubview:view6];
+    
+    UIView *view5 = [[UIView alloc] initWithFrame:CGRectMake(view6.maxX + 20, view4.maxY + 20, 100, 100)];
+    view5.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:view5];
     [view5 addShadowWithCornerRadii:BNKCornerRadiiMake(50, 20, 20, 35) shadowColor:[UIColor blackColor] shadowOffset:CGSizeMake(0, 2) shadowOpacity:0.5 shadowRadius:4];
-
+    
 }
 
 
